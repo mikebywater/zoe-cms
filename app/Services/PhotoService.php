@@ -1,10 +1,22 @@
 <?php
 
+namespace App\Services;
+
+use App\Repositories\Photo\PhotoRepository;
+
 class PhotoService
 {
-    public function __construct()
+    public function __construct(PhotoRepository $photoRepository)
     {
+        $this->photoRepository = $photoRepository;
+    }
 
+    /**
+     * Get all photos from the repo
+     */
+    public function all()
+    {
+        return $this->photoRepository->all();
     }
 
     /**

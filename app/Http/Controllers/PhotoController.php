@@ -2,13 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\PhotoService;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller
 {
+    public function __construct(PhotoService $service)
+    {
+        $this->service = $service;
+    }
+
     public function index()
     {
-        return "Photo list will be here";
+        $photos = $this->service->all();
+        return view('admin.photos.index')->with(['photos' => $photos]);
     }
 
     public function show()
