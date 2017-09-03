@@ -62,41 +62,41 @@ return [
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
-            'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'prefer',
+                'prefix' => '',
+                'schema' => 'public',
+                'sslmode' => 'prefer',
+            ],
+
+            'sqlsrv' => [
+                'driver' => 'sqlsrv',
+                'host' => env('DB_HOST', 'localhost'),
+                'port' => env('DB_PORT', '1433'),
+                'database' => env('DB_DATABASE', 'forge'),
+                'username' => env('DB_USERNAME', 'forge'),
+                'password' => env('DB_PASSWORD', ''),
+                'charset' => 'utf8',
+                'prefix' => '',
+            ],
+            'sqlite_testing' => [
+                'driver'   => 'sqlite',
+                'database' => ':memory:',
+                'prefix'   => '',
+            ],
+
         ],
 
-        'sqlsrv' => [
-            'driver' => 'sqlsrv',
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'charset' => 'utf8',
-            'prefix' => '',
-        ],
-        'sqlite_testing' => [
-            'driver'   => 'sqlite',
-            'database' => ':memory:',
-            'prefix'   => '',
-        ],
+        /*
+        |--------------------------------------------------------------------------
+        | Migration Repository Table
+        |--------------------------------------------------------------------------
+        |
+        | This table keeps track of all the migrations that have already run for
+        | your application. Using this information, we can determine which of
+        | the migrations on disk haven't actually been run in the database.
+        |
+        */
 
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Migration Repository Table
-    |--------------------------------------------------------------------------
-    |
-    | This table keeps track of all the migrations that have already run for
-    | your application. Using this information, we can determine which of
-    | the migrations on disk haven't actually been run in the database.
-    |
-    */
-
-    'migrations' => 'migrations',
+        'migrations' => 'migrations',
 
     /*
     |--------------------------------------------------------------------------

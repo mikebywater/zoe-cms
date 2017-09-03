@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Minimal Portfolio Theme">
     <meta name="keywords" content="responsive, retina ready, html5, css3, creative, portfolio, bootstrap theme" />
-    <meta name="author" content="KingStudio.ro">
+    <meta name="author" content="Mike Bywater">
 
     <!-- favicon -->
     <link rel="icon" href="images/favicon.png">
     <!-- page title -->
-    <title>MP - Minimal Portfolio Theme</title>
+    <title>Zoe Bywater Make Up Artist</title>
     <!-- bootstrap css -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- css -->
