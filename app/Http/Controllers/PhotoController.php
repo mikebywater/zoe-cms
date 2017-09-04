@@ -12,6 +12,11 @@ class PhotoController extends Controller
         $this->service = $service;
     }
 
+    public function create()
+    {
+        return view('admin.photos.upload');
+    }
+
     public function index()
     {
         $photos = $this->service->all();
@@ -22,4 +27,11 @@ class PhotoController extends Controller
     {
         return "This will be an individual photo";
     }
+
+    public function store(Request $request)
+    {
+        $this->service->upload($request->file('photo') , $request->all());
+        return redirect('/admin/photos');
+    }
+
 }

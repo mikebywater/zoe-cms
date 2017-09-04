@@ -28,8 +28,9 @@ class PhotoService
     public function upload($file, $data)
     {
         // Store the photo to disk
-
-        // Write to the photo repository
+        $data['url'] = 'https://i.pinimg.com/736x/67/c4/8e/67c48e715f250ca5d0d4d634590ef093--beauty-makeup-hair-beauty.jpg';
+        unset($data['photo']);
+        $this->photoRepository->create($data);
     }
 
     /**

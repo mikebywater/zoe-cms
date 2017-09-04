@@ -3931,3 +3931,7 @@ footer .social a {
 }
 /* End Min Widths */
 /* / End Media Screens */
+.logo-small
+{
+  height:40px;
+}
