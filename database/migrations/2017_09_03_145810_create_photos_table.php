@@ -17,7 +17,7 @@ class CreatePhotosTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('url');
-            $table->string('category_id')->->nullable();
+            $table->string('category_id')->nullable();
             $table->timestamps();
         });
     }

@@ -55,12 +55,13 @@ return [
             'visibility' => 'public',
         ],
 
-        's3' => [
+        'DO' => [
             'driver' => 's3',
             'key' => env('AWS_KEY'),
             'secret' => env('AWS_SECRET'),
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
+            'base_url' => env('AWS_URL')
         ],
 
     ],

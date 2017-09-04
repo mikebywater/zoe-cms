@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Repositories\Photo\PhotoRepository;
+use Storage;
 
 class PhotoService
 {
@@ -28,6 +29,14 @@ class PhotoService
     public function upload($file, $data)
     {
         // Store the photo to disk
+        $imageFileName = time() . '.' . $file->getClientOriginalExtension();
+       // dd($imageFileName);
+        $s3 = Storage::disk('DO');
+        dd($s3);
+        $filePath = '/photos/' . $imageFileName;
+        $content = file_get_contents($file);
+        $s3->put($filePath, $content , 'public');
+
         $data['url'] = 'https://i.pinimg.com/736x/67/c4/8e/67c48e715f250ca5d0d4d634590ef093--beauty-makeup-hair-beauty.jpg';
         unset($data['photo']);
         $this->photoRepository->create($data);
