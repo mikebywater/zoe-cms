@@ -77,7 +77,7 @@
 <!-- footer -->
 <footer class="dark">
     <div class="container">
-        <p class="footer-info">© ZOE BYWATER
+        <p class="footer-info"><a href="/admin">© ZOE BYWATER</a>
             <span class="social pull-right">
    <!--             <a href="#x"><i class="fa fa-facebook"></i></a>
                 <a href="#x"><i class="fa fa-twitter"></i></a> -->

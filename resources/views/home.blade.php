@@ -12,7 +12,7 @@
         <ul class="portfolio-filter list-inline text-center">
             <li><a href="#" data-group="all" class="active">ALL</a></li>
             @foreach($categories as $category)
-                <li><a href="#" data-group="{{$category->name}}">{{$category->name}}</a></li>
+                <li><a href="#" data-group="{{$category->name}}">{{strtoupper($category->name)}}</a></li>
             @endforeach
         </ul><!--end portfolio filter -->
         <ul class="row portfolio list-unstyled lightbox" id="grid">
@@ -36,7 +36,7 @@
 
                     <!-- project-details -->
                     <div class="project-details">
-                        <h5 class="project-title">{{$photo->title}}</h5>
+                        <h5 class="project-title">{{strtoupper($photo->title)}}</h5>
                      <!--   <p class="skill">SKILLS</p> -->
                     </div><!-- / project-details -->
                 </div><!-- / img-bg-color -->
