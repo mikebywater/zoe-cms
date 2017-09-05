@@ -12,14 +12,14 @@
         <ul class="portfolio-filter list-inline text-center">
             <li><a href="#" data-group="all" class="active">ALL</a></li>
             @foreach($categories as $category)
-                <li><a href="#" data-group="{{$category->id}}">{{$category->name}}</a></li>
+                <li><a href="#" data-group="{{$category->name}}">{{$category->name}}</a></li>
             @endforeach
         </ul><!--end portfolio filter -->
         <ul class="row portfolio list-unstyled lightbox" id="grid">
 
         @foreach($photos as $photo)
             <!-- project -->
-            <li class="col-xs-6 col-md-4 project" data-groups='["illustration"]'>
+            <li class="col-xs-6 col-md-4 project" data-groups='["{{$photo->category->name}}"]'>
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->

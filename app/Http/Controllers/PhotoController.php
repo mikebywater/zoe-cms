@@ -2,24 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\CategoryService;
 use App\Services\PhotoService;
 use Illuminate\Http\Request;
 
 class PhotoController extends Controller
 {
-    public function __construct(PhotoService $service)
+    protected $photoService;
+    protected $categoryService;
+
+    public function __construct(PhotoService $photoService , CategoryService $categoryService)
     {
-        $this->service = $service;
+        $this->photoService = $photoService;
+        $this->categoryService = $categoryService;
     }
 
     public function create()
     {
-        return view('admin.photos.upload');
+        $categories = $this->categoryService->all();
+        return view('admin.photos.upload')->with(['categories' => $categories]);
     }
 
     public function index()
     {
-        $photos = $this->service->all();
+        $photos = $this->photoService->all();
         return view('admin.photos.index')->with(['photos' => $photos]);
     }
 
@@ -30,7 +36,7 @@ class PhotoController extends Controller
 
     public function store(Request $request)
     {
-        $this->service->upload($request->file('photo') , $request->all());
+        $this->photoService->upload($request->file('photo') , $request->all());
         return redirect('/admin/photos');
     }
 
