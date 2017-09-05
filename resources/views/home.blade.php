@@ -11,9 +11,9 @@
         <!-- portfolio filter -->
         <ul class="portfolio-filter list-inline text-center">
             <li><a href="#" data-group="all" class="active">ALL</a></li>
-            <li><a href="#" data-group="wedding">WEDDING</a></li>
-            <li><a href="#" data-group="prom">PROM</a></li>
-            <li><a href="#" data-group="occasion">SPECIAL OCCASION</a></li>
+            @foreach($categories as $category)
+                <li><a href="#" data-group="{{$category->id}}">{{$category->name}}</a></li>
+            @endforeach
         </ul><!--end portfolio filter -->
         <ul class="row portfolio list-unstyled lightbox" id="grid">
 
@@ -37,7 +37,7 @@
                     <!-- project-details -->
                     <div class="project-details">
                         <h5 class="project-title">{{$photo->title}}</h5>
-                        <p class="skill">SKILLS</p>
+                     <!--   <p class="skill">SKILLS</p> -->
                     </div><!-- / project-details -->
                 </div><!-- / img-bg-color -->
             </li>
