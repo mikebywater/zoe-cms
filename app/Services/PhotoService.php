@@ -30,13 +30,12 @@ class PhotoService
     {
         // Store the photo to disk
         $imageFileName = time() . '.' . $file->getClientOriginalExtension();
-       // dd($imageFileName);
         $s3 = Storage::disk('DO');
         $filePath = '/photos/' . $imageFileName;
         $content = file_get_contents($file);
         $s3->put($filePath, $content , 'public');
 
-
+        // Write metadata to db
         $data['url'] = 'https://' . getenv('AWS_BUCKET') . '.nyc3.digitaloceanspaces.com' . $filePath;
         unset($data['photo']);
         $this->photoRepository->create($data);
