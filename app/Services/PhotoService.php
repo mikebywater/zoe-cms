@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Repositories\Photo\PhotoRepository;
+use Storage;
 
 class PhotoService
 {
@@ -28,8 +29,17 @@ class PhotoService
     public function upload($file, $data)
     {
         // Store the photo to disk
+        $imageFileName = time() . '.' . $file->getClientOriginalExtension();
+       // dd($imageFileName);
+        $s3 = Storage::disk('DO');
+        $filePath = '/photos/' . $imageFileName;
+        $content = file_get_contents($file);
+        $s3->put($filePath, $content , 'public');
 
-        // Write to the photo repository
+
+        $data['url'] = 'https://' . getenv('AWS_BUCKET') . '.nyc3.digitaloceanspaces.com' . $filePath;
+        unset($data['photo']);
+        $this->photoRepository->create($data);
     }
 
     /**
