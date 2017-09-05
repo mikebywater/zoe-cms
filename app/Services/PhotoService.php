@@ -32,12 +32,12 @@ class PhotoService
         $imageFileName = time() . '.' . $file->getClientOriginalExtension();
        // dd($imageFileName);
         $s3 = Storage::disk('DO');
-        dd($s3);
         $filePath = '/photos/' . $imageFileName;
         $content = file_get_contents($file);
         $s3->put($filePath, $content , 'public');
 
-        $data['url'] = 'https://i.pinimg.com/736x/67/c4/8e/67c48e715f250ca5d0d4d634590ef093--beauty-makeup-hair-beauty.jpg';
+
+        $data['url'] = 'https://' . getenv('AWS_BUCKET') . '.nyc3.digitaloceanspaces.com' . $filePath;
         unset($data['photo']);
         $this->photoRepository->create($data);
     }
