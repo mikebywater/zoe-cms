@@ -40,7 +40,7 @@ class PhotoService
         $filePath = '/photos/' . $imageFileName;
         $content = file_get_contents($file);
 
-        $image = Image::make($file)->fit(400);
+        $image = Image::make($file)->fit(800 , 600);
 
 
         $this->storage->put($filePath, $image->stream()->__toString() , 'public');
