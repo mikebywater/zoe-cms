@@ -12,12 +12,19 @@
                             @foreach ($categories as $category)
                                 <tr>
                                     <td>{{$category->name}}</td>
+                                    <td class="pull-right">
+                                        <form class="form-horizontal" action="/admin/categories/{{$category->id}}" method="post">
+                                            {{csrf_field()}}
+                                            {{ method_field('DELETE') }}
+                                            <button class = "btn btn-primary">Delete</button>
+                                        </form>
+                                    </td>
                                 </tr>
                             @endforeach
                         </table>
-                        <form class = "pull-right" action="/admin/categories" method="post" enctype='multipart/form-data'>
+                        <form class="form-horizontal" action="/admin/categories" method="post" enctype='multipart/form-data'>
                             {{csrf_field()}}
-                            <input type="text" name="name" placeholder="Enter New Category" required/>
+                            <input type="text" name="name" class="form-control" placeholder="Enter New Category" required/>
                             <button class = "btn btn-primary">Add</button>
                         </form>
 
