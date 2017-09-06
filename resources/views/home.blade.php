@@ -41,7 +41,7 @@
                     </div><!-- / project-details -->
                 </div><!-- / img-bg-color -->
             </li>
-            <!-- / proj ect -->
+            <!-- / project -->
          @endforeach
 
 

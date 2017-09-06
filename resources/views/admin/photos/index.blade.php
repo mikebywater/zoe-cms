@@ -11,7 +11,13 @@
     @foreach ($photos as $photo)
             <div class="col-md-3">
                 <img src="{{$photo->url}}"/>
+                <form action="/admin/photos/{{$photo->id}}"  method="post">
+                    {{csrf_field()}}
+                    {{ method_field('DELETE') }}
+                    <button class = "btn btn-primary">Delete</button>
+                </form>
             </div>
+
     @endforeach
     </div>
 

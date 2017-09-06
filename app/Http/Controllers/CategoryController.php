@@ -34,4 +34,9 @@ class CategoryController extends Controller
         return redirect('/admin/categories');
     }
 
+    public function destroy($id)
+    {
+        $this->service->delete($id);
+        return redirect('/admin/categories');
+    }
 }

@@ -24,4 +24,13 @@ class CategoryService
     {
         return $this->categoryRepository->create($data);
     }
+
+    /**
+     * Delete category
+     * @param $id
+     */
+    public function delete($id)
+    {
+        return $this->categoryRepository->delete($id);
+    }
 }

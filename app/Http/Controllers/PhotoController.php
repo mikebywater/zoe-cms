@@ -40,4 +40,10 @@ class PhotoController extends Controller
         return redirect('/admin/photos');
     }
 
+    public function destroy($id)
+    {
+        $this->photoService->delete($id);
+        return redirect('/admin/photos');
+    }
+
 }
