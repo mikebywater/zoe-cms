@@ -12,7 +12,7 @@ class PageController extends Controller
      */
     public function show($name)
     {
-
+        $this->pageService->findByName($name);
     }
 
     /**
@@ -28,7 +28,7 @@ class PageController extends Controller
      * Create a new page
      * @param Request $resuest
      */
-    public function store(Request $resuest)
+    public function store(Request $request)
     {
 
     }
