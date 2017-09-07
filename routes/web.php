@@ -24,6 +24,6 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function ()
 
     Route::resource('photos', 'PhotoController');
     Route::resource('categories', 'CategoryController');
-
+    Route::get('/' , 'DashboardController@show');
 });
 
