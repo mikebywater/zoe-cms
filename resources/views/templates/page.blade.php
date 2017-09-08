@@ -3,8 +3,25 @@
 
 
 @section('content')
+    <br/>
     <!-- content -->
-    <h1>{{$fields->title}}</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">{{$fields->title}}</div>
+
+                    <div class="panel-body">
+
+                    {{$fields->content}}
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 @endsection

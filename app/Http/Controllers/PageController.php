@@ -29,7 +29,7 @@ class PageController extends Controller
         $fields = $page->fields;
         foreach($fields as $field)
         {
-            $data = [$field->name => $field->value];
+            $data[$field->name] = $field->value;
         }
         return view('templates.page')->with(['pages' => $pages, 'fields' => (object) $data]);
     }
