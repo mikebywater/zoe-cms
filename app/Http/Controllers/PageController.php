@@ -2,17 +2,35 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\Field\Field;
+use App\Services\PageService;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+
+    protected $pageService;
+
+    public function __construct(PageService $pageService)
+     {
+         $this->pageService = $pageService;
+     }
+
     /**
      * Actually render the page to the public
      * @param $name
      */
     public function show($name)
     {
-        $this->pageService->findByName($name);
+        // $this->pageService->findByName($name);
+        $data = array();
+        $pages = $this->pageService->all();
+        $fields = Field::all();
+        foreach($fields as $field)
+        {
+            $data = [$field->name => $field->value];
+        }
+        return view('templates.page')->with(['pages' => $pages, 'fields' => (object) $data]);
     }
 
     /**
@@ -23,6 +41,16 @@ class PageController extends Controller
     {
 
     }
+
+    /**
+     * Update a page with field values
+     * @param $id
+     */
+    public function update($id, Request $request)
+    {
+
+    }
+
 
     /**
      * Create a new page

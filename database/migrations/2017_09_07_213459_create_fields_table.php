@@ -15,6 +15,10 @@ class CreateFieldsTable extends Migration
     {
         Schema::create('fields', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('type');
+            $table->string('name');
+            $table->text('value');
+            $table->integer('id_page');
             $table->timestamps();
         });
     }

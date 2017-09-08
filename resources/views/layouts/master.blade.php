@@ -11,20 +11,20 @@
     <meta name="author" content="Mike Bywater">
 
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
     <!-- page title -->
     <title>Zoe Bywater Make Up Artist</title>
     <!-- bootstrap css -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- css -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <!-- fonts -->
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <!-- /fonts/ -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/linear-icons.css">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/linear-icons.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,12 +56,13 @@
                     <span class="icon-bar"></span>
                 </button>
             </div><!-- / navbar-header -->
-            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="/images/logo.jpg" alt="logo"></a>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><span>HOME</span></a></li>
-                    <li><a href="about.html"><span>ABOUT</span></a></li>
-                    <li><a href="contact.html"><span>CONTACT</span></a></li>
+                    <li class="active"><a href="/home"><span>HOME</span></a></li>
+                    @foreach($pages as $page)
+                    <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
+                    @endforeach
                 </ul>
             </div><!--/ nav-collapse -->
         </div><!-- / container -->
@@ -89,15 +90,15 @@
 <!-- / footer -->
 
 <!-- javascript -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
 
 <!-- portfolio -->
-<script src="js/custom.js"></script>
-<script src="js/jquery.shuffle.min.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/jquery.shuffle.min.js"></script>
 <!-- lightbox -->
-<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="/js/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript">
     // This will create a single gallery from all elements that have class "lightbox"
     $('.lightbox').each(function() {
@@ -114,7 +115,7 @@
 <!-- / portfolio -->
 
 <!-- preloader -->
-<script src="js/preloader.js"></script>
+<script src="/js/preloader.js"></script>
 <!-- / preloader -->
 
 <!-- / javascript -->

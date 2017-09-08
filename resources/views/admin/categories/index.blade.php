@@ -8,15 +8,15 @@
                     <div class="panel-heading">Categories</div>
 
                     <div class="panel-body">
-                        <table class="table table-striped">
+                        <table class="table table-striped table-responsive">
                             @foreach ($categories as $category)
                                 <tr>
                                     <td>{{$category->name}}</td>
-                                    <td class="pull-right">
-                                        <form class="form-horizontal" action="/admin/categories/{{$category->id}}" method="post">
+                                    <td >
+                                        <form class="pull-right" action="/admin/categories/{{$category->id}}" method="post">
                                             {{csrf_field()}}
                                             {{ method_field('DELETE') }}
-                                            <button class = "btn btn-primary">Delete</button>
+                                            <button class = "btn btn-danger">Delete</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -25,7 +25,7 @@
                         <form class="form-horizontal" action="/admin/categories" method="post" enctype='multipart/form-data'>
                             {{csrf_field()}}
                             <input type="text" name="name" class="form-control" placeholder="Enter New Category" required/>
-                            <button class = "btn btn-primary">Add</button>
+                            <button class = "btn btn-success">Add</button>
                         </form>
 
 
