@@ -19,6 +19,7 @@ class PageController extends Controller
     /**
      * Actually render the page to the public
      * @param $name
+     * @return $this
      */
     public function show($name)
     {

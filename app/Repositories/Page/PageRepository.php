@@ -18,7 +18,7 @@ class PageRepository extends Repository
 
     public function findByName($name)
     {
-        return $this->model->where('name' , $name)->take(1);
+        return $this->model->where('name' , $name)->first();
     }
 
 
