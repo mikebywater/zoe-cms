@@ -25,7 +25,7 @@ class PageService
 
     public function findByName($name)
     {
-
+        return $this->pageRepository->findByName($name);
     }
 
 

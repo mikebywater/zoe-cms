@@ -16,6 +16,11 @@ class PageRepository extends Repository
         $this->model = new Page;
     }
 
+    public function findByName($name)
+    {
+        return $this->model->where('name' , $name)->take(1);
+    }
+
 
 
 }

@@ -18,7 +18,7 @@ class CreateFieldsTable extends Migration
             $table->string('type');
             $table->string('name');
             $table->text('value');
-            $table->integer('id_page');
+            $table->integer('page_id');
             $table->timestamps();
         });
     }

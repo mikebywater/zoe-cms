@@ -22,10 +22,10 @@ class PageController extends Controller
      */
     public function show($name)
     {
-        // $this->pageService->findByName($name);
         $data = array();
+        $page = $this->pageService->findByName($name);
         $pages = $this->pageService->all();
-        $fields = Field::all();
+        $fields = $page->fields;
         foreach($fields as $field)
         {
             $data = [$field->name => $field->value];
