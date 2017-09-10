@@ -37,7 +37,9 @@
                     <!-- project-details -->
                     <div class="project-details">
                         <h5 class="project-title">{{strtoupper($photo->title)}}</h5>
-                     <!--   <p class="skill">SKILLS</p> -->
+                        @if($photo->description)
+                            <p class="skill">{{strtoupper($photo->description)}}</p>
+                        @endif
                     </div><!-- / project-details -->
                 </div><!-- / img-bg-color -->
             </li>

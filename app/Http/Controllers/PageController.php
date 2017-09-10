@@ -31,7 +31,7 @@ class PageController extends Controller
         {
             $data[$field->name] = $field->value;
         }
-        return view('templates.page')->with(['pages' => $pages, 'fields' => (object) $data]);
+        return view('templates.contact')->with(['pages' => $pages, 'fields' => (object) $data]);
     }
 
     /**
