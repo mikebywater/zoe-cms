@@ -6,7 +6,7 @@
     <div id="header-banner">
         <div class="banner-content single-page text-center">
             <div class="banner-info">
-                <h1>CONTACT ME</h1>
+                <h1>{{$fields->title}}</h1>
                 <p>Get in touch with me.</p>
             </div><!-- / banner-info -->
         </div><!-- / banner-content -->

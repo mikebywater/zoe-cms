@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Minimal Portfolio Theme">
-    <meta name="keywords" content="responsive, retina ready, html5, css3, creative, portfolio, bootstrap theme" />
+    <meta name="keywords" content="responsive, retina ready, html5, css3, creative, portfolio, bootstrap theme"/>
     <meta name="author" content="Mike Bywater">
 
     <!-- favicon -->
@@ -49,7 +49,8 @@
     <nav class="navbar navbar-default stacked-menu">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -58,12 +59,16 @@
             </div><!-- / navbar-header -->
             <a class="navbar-brand" href="index.html"><img src="/images/logo.jpg" alt="logo"></a>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="/home"><span>HOME</span></a></li>
-                    @foreach($pages as $page)
-                    <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
-                    @endforeach
-                </ul>
+
+                @if(! Auth::guest())
+                    <ul class="nav navbar-nav">
+                        <li><a href="/home"><span>HOME</span></a></li>
+                        @foreach($pages as $page)
+                            <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
+                        @endforeach
+                    </ul>
+                @endif
+
             </div><!--/ nav-collapse -->
         </div><!-- / container -->
     </nav>
@@ -101,12 +106,12 @@
 <script src="/js/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript">
     // This will create a single gallery from all elements that have class "lightbox"
-    $('.lightbox').each(function() {
+    $('.lightbox').each(function () {
         $(this).magnificPopup({
             delegate: 'a.open-gallery', // the selector for gallery item
             type: 'image',
             gallery: {
-                enabled:true
+                enabled: true
             }
         });
     });

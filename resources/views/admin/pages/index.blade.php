@@ -5,18 +5,18 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Categories</div>
+                    <div class="panel-heading">Pages</div>
 
                     <div class="panel-body">
                         <table class="table table-striped table-responsive">
-                            @foreach ($categories as $category)
+                            @foreach ($pages as $page)
                                 <tr>
-                                    <td>{{$category->name}}</td>
+                                    <td>{{$page->name}}</td>
                                     <td >
-                                        <form class="pull-right" action="/admin/categories/{{$category->id}}" method="post">
+                                        <form class="pull-right" action="/admin/pages/{{$page->id}}" method="post">
                                             {{csrf_field()}}
                                             {{ method_field('DELETE') }}
-                                            <button class = "btn btn-sm btn-danger">Delete</button>
+                                            <button class = "btn btn-danger">Delete</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -31,13 +31,14 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
-                        <div class="panel-heading">Add Category</div>
+                        <div class="panel-heading">New Page</div>
 
                         <div class="panel-body">
-                            <form class="form-horizontal" action="/admin/categories" method="post" enctype='multipart/form-data'>
+                            <form class="form-horizontal" action="/admin/pages" method="post" enctype='multipart/form-data'>
                                 {{csrf_field()}}
-                                <input type="text" name="name" class="form-control" placeholder="Enter New Category" required/>
-                                <button class = "btn btn-success">Add</button>
+                                <input type="text" name="name" class="form-control" placeholder="Enter Page Name" required/>
+                                <input type="text" name="template" class="form-control" placeholder="Select Template" required/>
+                                <button type="form-submit" class = "btn btn-md btn-success">Create</button>
                             </form>
                         </div>
                     </div>
@@ -45,11 +46,5 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
 
 @endsection

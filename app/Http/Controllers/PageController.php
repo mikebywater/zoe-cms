@@ -12,9 +12,15 @@ class PageController extends Controller
     protected $pageService;
 
     public function __construct(PageService $pageService)
-     {
-         $this->pageService = $pageService;
-     }
+    {
+        $this->pageService = $pageService;
+    }
+
+    public function index()
+    {
+        $pages = $this->pageService->all();
+        return view('admin.pages.index')->with(['pages' => $pages]);
+    }
 
     /**
      * Actually render the page to the public
@@ -27,11 +33,10 @@ class PageController extends Controller
         $page = $this->pageService->findByName($name);
         $pages = $this->pageService->all();
         $fields = $page->fields;
-        foreach($fields as $field)
-        {
+        foreach ($fields as $field) {
             $data[$field->name] = $field->value;
         }
-        return view('templates.contact')->with(['pages' => $pages, 'fields' => (object) $data]);
+        return view("templates.$page->template")->with(['pages' => $pages, 'fields' => (object)$data]);
     }
 
     /**
@@ -55,7 +60,7 @@ class PageController extends Controller
 
     /**
      * Create a new page
-     * @param Request $resuest
+     * @param Request $request
      */
     public function store(Request $request)
     {

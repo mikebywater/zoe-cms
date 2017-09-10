@@ -3,25 +3,25 @@
 
 
 @section('content')
-    <br/>
-    <!-- content -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">{{$fields->title}}</div>
-
-                    <div class="panel-body">
-
-                    {{$fields->content}}
-
-
-                    </div>
-                </div>
+        <!-- header-banner -->
+            <div id="header-banner">
+                <div class="banner-content single-page text-center">
+                    <div class="banner-info">
+                        <h1>{{$fields->title}}</h1>
+                        <p>{{$fields->description}}</p>
+                    </div><!-- / banner-info -->
+                </div><!-- / banner-content -->
             </div>
-        </div>
-    </div>
+            <!-- / header-banner -->
+            </header>
+            <!-- / header -->
 
 
+            <div id="page-content" class="container">
+                <div class="row">
+                    {{$fields->content}}
+                </div>
+            </div><!-- / container -->
+
+            <!-- / content -->
 @endsection
