@@ -61,10 +61,18 @@ class PageController extends Controller
     /**
      * Create a new page
      * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function store(Request $request)
     {
+        $this->pageService->create($request->all());
+        return redirect('/admin/pages');
+    }
 
+    public function destroy($id)
+    {
+        $this->pageService->delete($id);
+        return redirect('/admin/pages');
     }
 
 

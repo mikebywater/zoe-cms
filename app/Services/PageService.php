@@ -28,6 +28,16 @@ class PageService
         return $this->pageRepository->findByName($name);
     }
 
+    /**
+     * Create a new page
+     * @param $data
+     * @return
+     */
+    public function create($data)
+    {
+        return $this->pageRepository->create($data);
+    }
+
 
     /**
      * Delete a page
