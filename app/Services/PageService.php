@@ -3,16 +3,19 @@
 namespace App\Services;
 
 use App\Repositories\Page\PageRepository;
+use App\Repositories\Template\TemplateRepository;
 
 class PageService
 {
 
     protected $pageRepository;
+    protected $templateRepository;
 
 
-    public function __construct(PageRepository $pageRepository)
+    public function __construct(PageRepository $pageRepository , TemplateRepository $templateRepository)
     {
         $this->pageRepository = $pageRepository;
+        $this->templateRepository = $templateRepository;
     }
 
     /**
@@ -21,6 +24,14 @@ class PageService
     public function all()
     {
         return $this->pageRepository->all();
+    }
+
+    /**
+     * Get all templates
+     */
+    public function templates()
+    {
+        return $this->templateRepository->all();
     }
 
     public function findByName($name)
@@ -35,7 +46,8 @@ class PageService
      */
     public function create($data)
     {
-        return $this->pageRepository->create($data);
+        $page = $this->pageRepository->create($data);
+
     }
 
 

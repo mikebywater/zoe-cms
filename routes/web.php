@@ -28,5 +28,7 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function ()
     Route::resource('categories', 'CategoryController');
     Route::resource('pages', 'PageController');
     Route::get('/' , 'DashboardController@show');
+    Route::get('/templates' , 'TemplateController@index');
+    Route::get('/templates/{name}', 'TemplateController@show');
 });
 

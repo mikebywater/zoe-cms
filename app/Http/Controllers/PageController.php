@@ -19,7 +19,8 @@ class PageController extends Controller
     public function index()
     {
         $pages = $this->pageService->all();
-        return view('admin.pages.index')->with(['pages' => $pages]);
+        $templates = $this->pageService->templates();
+        return view('admin.pages.index')->with(['pages' => $pages , 'templates' => $templates]);
     }
 
     /**

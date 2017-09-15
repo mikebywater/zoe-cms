@@ -37,7 +37,13 @@
                             <form class="form-horizontal" action="/admin/pages" method="post" enctype='multipart/form-data'>
                                 {{csrf_field()}}
                                 <input type="text" name="name" class="form-control" placeholder="Enter Page Name" required/>
-                                <input type="text" name="template" class="form-control" placeholder="Select Template" required/>
+
+                                <select name="template" class="form-control" required>
+                                    @foreach($templates as $template)
+                                        <option>{{$template->name}}</option>
+                                    @endforeach
+                                </select>
+
                                 <button type="form-submit" class = "btn btn-md btn-success">Create</button>
                             </form>
                         </div>
