@@ -11,8 +11,15 @@
                         <form class="form-horizontal" action="/admin/pages/{{$page->id}}" method="post" enctype='multipart/form-data'>
                             {{csrf_field()}}
                             <input type="hidden" name="_method" value="put"/>
-                            <input type="text" name="name" class="form-control" placeholder="Enter Page Name" value="{{$page->name}}" required/>
+                            <!-- field -->
+                            <div class="form-group">
+                                <label for="name" class="col-md-2 control-label">Page Name</label>
 
+                                <div class="col-md-8">
+                                    <input id="name" type="text" class="form-control" name="name" value="{{$page->name}}" required autofocus>
+                                </div>
+                            </div>
+                            <!--end field -->
                             <button type="form-submit" class="btn btn-md btn-success">Save</button>
                         </form>
                     </div>
@@ -25,13 +32,21 @@
                     <div class="panel-heading">Edit Fields</div>
 
                     <div class="panel-body">
-                        <form class="form-horizontal" action="/admin/pages/{{$page->id}}" method="post" enctype='multipart/form-data'>
+                        <form class="form-horizontal" action="/admin/pages/{{$page->id}}/fields" method="post" enctype='multipart/form-data'>
                             {{csrf_field()}}
+
                             <input type="hidden" name="_method" value="put"/>
                             @foreach($page->fields as $field)
-                                <input type="text" name="{{$field->name}}" class="form-control" placeholder="Enter Page Name" value="{{$field->value}}" required/>
-                            @endforeach
+                            <!-- field -->
+                                <div class="form-group">
+                                    <label for="{{$field->name}}" class="col-md-2 control-label">{{$field->name}}</label>
 
+                                    <div class="col-md-8">
+                                        <input id="{{$field->name}}" type="text" class="form-control" name="{{$field->name}}" value="{{$field->value}}" required autofocus>
+                                    </div>
+                                </div>
+                                <!--end field -->
+                            @endforeach
                             <button type="form-submit" class="btn btn-md btn-success">Save</button>
                         </form>
                     </div>
