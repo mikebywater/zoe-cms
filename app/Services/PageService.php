@@ -30,8 +30,8 @@ class PageService
     }
 
     /**
-     * Get all templates
-     */
+ * Get all templates
+ */
     public function templates()
     {
         return $this->templateRepository->all();
@@ -41,6 +41,12 @@ class PageService
     {
         return $this->pageRepository->findByName($name);
     }
+
+    public function find($id)
+    {
+        return $this->pageRepository->find($id);
+    }
+
 
     /**
      * Create a new page
@@ -57,6 +63,10 @@ class PageService
         return $page;
     }
 
+    public function update($id , $data)
+    {
+        return $this->pageRepository->update($id,$data);
+    }
 
     /**
      * Delete a page

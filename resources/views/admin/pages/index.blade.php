@@ -11,7 +11,7 @@
                         <table class="table table-striped table-responsive">
                             @foreach ($pages as $page)
                                 <tr>
-                                    <td>{{$page->name}}</td>
+                                    <td><a href="/admin/pages/{{$page->id}}/edit">{{$page->name}}</a></td>
                                     <td >
                                         <form class="pull-right" action="/admin/pages/{{$page->id}}" method="post">
                                             {{csrf_field()}}

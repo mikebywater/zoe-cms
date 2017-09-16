@@ -46,16 +46,19 @@ class PageController extends Controller
      */
     public function edit($id)
     {
-
+        $page = $this->pageService->find($id);
+        return view('admin.pages.edit')->with(['page' => $page]);
     }
 
     /**
      * Update a page with field values
      * @param $id
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function update($id, Request $request)
     {
-
+        $this->pageService->update($id, $request->all());
+        return redirect('admin/pages/' . $id . '/edit');
     }
 
 
