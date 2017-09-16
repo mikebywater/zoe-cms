@@ -21,6 +21,4 @@ class PageRepository extends Repository
         return $this->model->where('name' , $name)->first();
     }
 
-
-
 }
