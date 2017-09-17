@@ -12,4 +12,9 @@ class FieldRepository extends Repository
     {
         $this->model = new Field();
     }
+
+    public function findByPageAndName($page_id , $name)
+    {
+        return $this->model->page($page_id)->name($name)->first();
+    }
 }

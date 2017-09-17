@@ -43,6 +43,7 @@ class PageController extends Controller
     /**
      * Edit form for a page where you can set the field values
      * @param $id
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit($id)
     {
@@ -51,13 +52,26 @@ class PageController extends Controller
     }
 
     /**
-     * Update a page with field values
+     * Update page properties
      * @param $id
+     * @param Request $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function update($id, Request $request)
     {
         $this->pageService->update($id, $request->all());
+        return redirect('admin/pages/' . $id . '/edit');
+    }
+
+    /**
+     * Update a page with field values
+     * @param $id
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
+     */
+    public function updateFields($id, Request $request)
+    {
+        $this->pageService->updateFields($id, $request->all());
         return redirect('admin/pages/' . $id . '/edit');
     }
 

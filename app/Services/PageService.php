@@ -68,6 +68,17 @@ class PageService
         return $this->pageRepository->update($id,$data);
     }
 
+    public function updateFields($id , $data)
+    {
+        unset($data['_token']);
+        unset($data['_method']);
+        $keys = array_keys($data);
+        foreach($keys as $key){
+            $field = $this->fieldRepository->findByPageAndName($id, $key);
+            $this->fieldRepository->update($field->id,array('name' => $key , 'value' => $data[$key]));
+        }
+    }
+
     /**
      * Delete a page
      *
