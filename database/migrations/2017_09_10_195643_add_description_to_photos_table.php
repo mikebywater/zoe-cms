@@ -14,7 +14,7 @@ class AddDescriptionToPhotosTable extends Migration
     public function up()
     {
         Schema::table('photos', function (Blueprint $table) {
-            $table->string('description')->nullable()->default("");
+            $table->string('description')->nullable();
         });
     }
 

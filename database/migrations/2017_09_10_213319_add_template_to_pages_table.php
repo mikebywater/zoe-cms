@@ -14,7 +14,7 @@ class AddTemplateToPagesTable extends Migration
     public function up()
     {
         Schema::table('pages', function (Blueprint $table) {
-            $table->string('template');
+            $table->string('template')->default('page');
         });
     }
 
