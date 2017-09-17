@@ -19,11 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/pages/{name}', 'PageController@show');
+
 Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function ()
 {
 
     Route::resource('photos', 'PhotoController');
     Route::resource('categories', 'CategoryController');
+    Route::resource('pages', 'PageController');
+    Route::put('pages/{id}/fields', 'PageController@updateFields');
     Route::get('/' , 'DashboardController@show');
+    Route::get('/templates' , 'TemplateController@index');
+    Route::get('/templates/{name}', 'TemplateController@show');
 });
 

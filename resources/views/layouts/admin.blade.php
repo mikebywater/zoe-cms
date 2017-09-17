@@ -62,14 +62,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="/admin/photos"><span>PHOTOS</span></a></li>
                     <li><a href="/admin/categories"><span>CATEGORIES</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>PAGES</span> <span class="dropdown-icon"></span></a>
-                        <ul class="dropdown-menu animated zoomIn fast">
-                            <li><a href="about2.html"><span>HOME</span></a></li>
-                            <li><a href="contact2.html"><span>ABOUT</span></a></li>
-                            <li><a href="404.html"><span>CONTACT</span></a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/admin/pages"><span>PAGES</span></a></li>
+
                 </ul>
             </div><!--/ nav-collapse -->
         </div><!-- / container -->

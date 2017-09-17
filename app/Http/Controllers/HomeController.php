@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Repositories\Photo\PhotoRepository;
 use App\Services\CategoryService;
+use App\Services\PageService;
 use App\Services\PhotoService;
 use Illuminate\Http\Request;
 
@@ -12,16 +13,19 @@ class HomeController extends Controller
 
     protected $categoryService;
     protected $photoService;
+    protected $pageService;
 
     /**
      * HomeController constructor.
      * @param PhotoService $photoService
      * @param CategoryService $categoryService
+     * @param PageService $pageService
      */
-    public function __construct(PhotoService $photoService , CategoryService $categoryService)
+    public function __construct(PhotoService $photoService , CategoryService $categoryService, PageService $pageService)
     {
         $this->categoryService = $categoryService;
         $this->photoService = $photoService;
+        $this->pageService = $pageService;
     }
 
     /**
@@ -33,6 +37,7 @@ class HomeController extends Controller
     {
         $photos = $this->photoService->all();
         $categories = $this->categoryService->all();
-        return view('home')->with(['photos' => $photos , 'categories' => $categories ]);
+        $pages = $this->pageService->all();
+        return view('home')->with(['photos' => $photos , 'categories' => $categories , 'pages' => $pages ]);
     }
 }

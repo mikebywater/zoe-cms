@@ -1,0 +1,56 @@
+[
+  {
+    "name": "page",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "content",
+        "type": "text"
+      }
+    ]
+  },
+  {
+    "name": "contact",
+    "fields": [
+      {
+        "name": "title",
+        "type": "text"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "name": "content",
+        "type": "text-box"
+      },
+      {
+        "name": "facebook",
+        "type": "text"
+      },
+      {
+        "name": "twitter",
+        "type": "text"
+      },
+      {
+        "name": "phone",
+        "type": "text"
+      },
+      {
+        "name": "email",
+        "type": "email"
+      },
+      {
+        "name": "image",
+        "type": "image"
+      }
+    ]
+  }
+]
