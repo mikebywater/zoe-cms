@@ -28,15 +28,11 @@
         "type": "text"
       },
       {
-        "name": "content",
-        "type": "text-box"
-      },
-      {
         "name": "facebook",
         "type": "text"
       },
       {
-        "name": "twitter",
+        "name": "instagram",
         "type": "text"
       },
       {
@@ -46,10 +42,6 @@
       {
         "name": "email",
         "type": "email"
-      },
-      {
-        "name": "image",
-        "type": "image"
       }
     ]
   }

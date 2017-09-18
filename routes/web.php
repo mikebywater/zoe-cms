@@ -21,6 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/pages/{name}', 'PageController@show');
 
+Route::post('/send', 'EmailController@send');
+
 Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function ()
 {
 
