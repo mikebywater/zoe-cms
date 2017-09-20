@@ -48,16 +48,27 @@
     <!-- nav -->
     <nav class="navbar navbar-default stacked-menu">
         <div class="container">
+
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <div class="row">
+                    <div class="col-xs-10">
+                        <img class="visible-xs" height="100" src="/images/logo.jpg" alt="logo">
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+
+                </div>
+
             </div><!-- / navbar-header -->
-            <a class="navbar-brand" href="index.html"><img src="/images/logo.jpg" alt="logo"></a>
+
+            <a class="navbar-brand" href="index.html"><img class="hidden-xs"  src="/images/logo.jpg" alt="logo"></a>
             <div class="navbar-collapse collapse">
 
                 @if(! Auth::guest())
@@ -85,8 +96,8 @@
     <div class="container">
         <p class="footer-info"><a href="mailto:zoe.j.bywater@hotmail.com"><i class="fa fa-envelope"></i> zoe.j.bywater@hotmail.com</a>
             <span class="social pull-right">
-   <!--             <a href="#x"><i class="fa fa-facebook"></i></a>
-                <a href="#x"><i class="fa fa-twitter"></i></a> -->
+                <a href="https://www.facebook.com/Zoe-Bywater-Makeup-Artist-133603593932613"><i class="fa fa-facebook"></i></a>
+             <!--   <a href="#x"><i class="fa fa-twitter"></i></a> -->
                 <a href="https://www.instagram.com/zoebywatermua/"><i class="fa fa-instagram"></i></a>
                 <a href="/admin"><i class="fa fa-cog"></i></a>
             </span>
