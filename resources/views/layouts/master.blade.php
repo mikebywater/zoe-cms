@@ -96,8 +96,8 @@
     <div class="container">
         <p class="footer-info"><a href="mailto:zoe.j.bywater@hotmail.com"><i class="fa fa-envelope"></i> zoe.j.bywater@hotmail.com</a>
             <span class="social pull-right">
-   <!--             <a href="#x"><i class="fa fa-facebook"></i></a>
-                <a href="#x"><i class="fa fa-twitter"></i></a> -->
+                <a href="https://www.facebook.com/Zoe-Bywater-Makeup-Artist-133603593932613"><i class="fa fa-facebook"></i></a>
+             <!--   <a href="#x"><i class="fa fa-twitter"></i></a> -->
                 <a href="https://www.instagram.com/zoebywatermua/"><i class="fa fa-instagram"></i></a>
                 <a href="/admin"><i class="fa fa-cog"></i></a>
             </span>
