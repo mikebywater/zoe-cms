@@ -42,7 +42,11 @@
                                     <label for="{{$field->name}}" class="col-md-2 control-label">{{$field->name}}</label>
 
                                     <div class="col-md-8">
-                                        <input id="{{$field->name}}" type="text" class="form-control" name="{{$field->name}}" value="{{$field->value}}" required autofocus>
+                                        @if($field->type == 'string')
+                                            <input id="{{$field->name}}" type="text" class="form-control" name="{{$field->name}}" value="{{$field->value}}" required autofocus>
+                                        @else
+                                            <textarea class="summernote" name="{{$field->name}}" value="{{$field->value}}" required autofocus>{{$field->value}}</textarea>
+                                        @endif
                                     </div>
                                 </div>
                                 <!--end field -->
@@ -54,5 +58,6 @@
             </div>
         </div>
     </div>
+
 
 @endsection

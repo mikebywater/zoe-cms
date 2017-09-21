@@ -17,13 +17,14 @@
     <!-- bootstrap css -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <!-- css -->
-    <link href="/css/style.css" rel="stylesheet">
+
+
     <link href="/css/animate.css" rel="stylesheet">
     <link href="/css/magnific-popup.css" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
     <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
+    <link href='/fonts/FontAwesome.otf' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/linear-icons.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -95,6 +96,30 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/jquery.easing.min.js"></script>
+
+<!-- include summernote css/js-->
+<link href="/css/style.css" rel="stylesheet">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css" rel="stylesheet">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.summernote').summernote({
+            height: 200,
+            minHeight: 100,
+            styleTags: ['pre', 'h1', 'h2' , 'h3' , 'h4' , 'p'],
+            toolbar: [
+                ["style", ["style"]],
+                ['undo' , ['undo']],
+                ['redo' , ['redo']],
+                ['font', ['bold', 'italic', 'underline']],
+                ['para', ['ol', 'paragraph']],
+                ['link' , ['link']],
+                ['fullscreen' , ['fullscreen']],
+            ]
+        });
+    });
+</script>
 
 
 

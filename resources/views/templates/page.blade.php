@@ -19,7 +19,7 @@
 
             <div id="page-content" class="container">
                 <div class="row">
-                    {{$fields->content}}
+                    {!! $fields->content!!}
                 </div>
             </div><!-- / container -->
 
