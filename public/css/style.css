@@ -3935,3 +3935,8 @@ footer .social a {
 {
   height:40px;
 }
+
+.note-toolbar.panel-heading
+{
+  background-color: whitesmoke;
+}
