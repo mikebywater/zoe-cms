@@ -71,14 +71,12 @@
             <a class="navbar-brand" href="index.html"><img class="hidden-xs"  src="/images/logo.jpg" alt="logo"></a>
             <div class="navbar-collapse collapse">
 
-                @if(! Auth::guest())
                     <ul class="nav navbar-nav">
                         <li><a href="/home"><span>HOME</span></a></li>
                         @foreach($pages as $page)
                             <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
                         @endforeach
                     </ul>
-                @endif
 
             </div><!--/ nav-collapse -->
         </div><!-- / container -->
