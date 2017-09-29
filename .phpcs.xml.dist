@@ -1,6 +1,12 @@
 <?xml version="1.0" ?>
 <ruleset name="zoe-cms/mikebywater">
     <description>My rules</description>
-    <file>.</file>
-    <rule ref="PSR2"/>
+    <file>./app</file>
+    <!--<rule ref="PSR2"/> -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace"/>
+    <rule ref="Generic.WhiteSpace.ScopeIndent.IncorrectExact"/>
+    <rule ref="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+    <rule ref="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+    <arg name="tab-width" value="4"/>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
 </ruleset>
