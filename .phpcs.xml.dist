@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<ruleset name="zoe-cms/mikebywater">
+    <description>My rules</description>
+    <file>.</file>
+    <rule ref="PSR2"/>
+</ruleset>
