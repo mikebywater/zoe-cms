@@ -73,9 +73,11 @@
 
                     <ul class="nav navbar-nav">
                         <li><a href="/home"><span>HOME</span></a></li>
-                        @foreach($pages as $page)
-                            <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
-                        @endforeach
+                        @if(isset($pages))
+                            @foreach($pages as $page)
+                                <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
+                            @endforeach
+                        @endif
                     </ul>
 
             </div><!--/ nav-collapse -->
