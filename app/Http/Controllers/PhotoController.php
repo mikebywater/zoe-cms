@@ -11,7 +11,7 @@ class PhotoController extends Controller
     protected $photoService;
     protected $categoryService;
 
-    public function __construct(PhotoService $photoService , CategoryService $categoryService)
+    public function __construct(PhotoService $photoService, CategoryService $categoryService)
     {
         $this->photoService = $photoService;
         $this->categoryService = $categoryService;
@@ -36,7 +36,7 @@ class PhotoController extends Controller
 
     public function store(Request $request)
     {
-        $this->photoService->upload($request->file('photo') , $request->all());
+        $this->photoService->upload($request->file('photo'), $request->all());
         return redirect('/admin/photos');
     }
 

@@ -26,4 +26,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function test($name)
+{
+        if($name=='ace'){
+            echo "test";
+        }
+    }
 }
