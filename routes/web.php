@@ -24,6 +24,9 @@ Route::get('/google278d3acd537d5b85.html', function () {
     return view('google');
 });
 
+Route::get('/sitemap.xml', 'PageController@sitemap');
+
+
 
 
 Route::post('/send', 'EmailController@send');
@@ -34,6 +37,7 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function ()
     Route::resource('photos', 'PhotoController');
     Route::resource('categories', 'CategoryController');
     Route::resource('pages', 'PageController');
+
     Route::put('pages/{id}/fields', 'PageController@updateFields');
     Route::get('/' , 'DashboardController@show');
     Route::get('/templates' , 'TemplateController@index');

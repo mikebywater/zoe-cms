@@ -87,6 +87,13 @@ class PageController extends Controller
         return redirect('/admin/pages');
     }
 
+
+    public function sitemap()
+    {
+        $pages = $this->pageService->all();
+        return response()->view('sitemap', ['pages' => $pages])->header('Content-Type', 'text/xml');
+    }
+
     public function destroy($id)
     {
         $this->pageService->delete($id);
