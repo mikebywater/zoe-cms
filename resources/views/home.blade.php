@@ -6,7 +6,7 @@
 <!-- content -->
 
 <!-- portfolio section -->
-<section id="portfolio" class="no-gutter">
+<section id="portfolio" class="">
     <div class="container">
         <!-- portfolio filter -->
         <ul class="portfolio-filter list-inline text-center">
