@@ -69,7 +69,7 @@
 
             </div><!-- / navbar-header -->
 
-            <a class="navbar-brand" href="index.html"><img class="hidden-xs"  src="/images/logo.jpg" alt="logo"></a>
+            <a class="navbar-brand" href="/"><img class="hidden-xs"  src="/images/logo.jpg" alt="logo"></a>
             <div class="navbar-collapse collapse">
 
                     <ul class="nav navbar-nav">
@@ -95,7 +95,7 @@
 <!-- footer -->
 <footer class="dark">
     <div class="container">
-        <p class="footer-info"><a href="mailto:zoe.j.bywater@hotmail.com"><i class="fa fa-envelope"></i> zoe.j.bywater@hotmail.com</a>
+        <p class="footer-info"><a href="mailto:zoebywatermua@gmail.com"><i class="fa fa-envelope"></i> zoebywatermua@gmail.com</a>
             <span class="social pull-right">
                 <a href="https://www.facebook.com/Zoe-Bywater-Makeup-Artist-133603593932613"><i class="fa fa-facebook"></i></a>
              <!--   <a href="#x"><i class="fa fa-twitter"></i></a> -->
