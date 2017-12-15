@@ -14,7 +14,7 @@ class AddRankColumnToPhotosTable extends Migration
     public function up()
     {
         Schema::table('photos', function (Blueprint $table) {
-            $table->bigInteger('rank');
+            $table->bigInteger('rank')->nullable();
         });
     }
 
