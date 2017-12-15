@@ -46,4 +46,16 @@ class PhotoController extends Controller
         return redirect('/admin/photos');
     }
 
+    public function moveUp($id)
+    {
+        $this->photoService->moveUp($id);
+        return redirect('/admin/photos');
+    }
+
+    public function moveDown($id)
+    {
+        $this->photoService->moveDown($id);
+        return redirect('/admin/photos');
+    }
+
 }

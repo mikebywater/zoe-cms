@@ -75,8 +75,20 @@ class PhotoService
     public function moveUp($id)
     {
         $photo = $this->photoRepository->find($id);
-        return $this->photoRepository->incrementLowerRank($photo->id);
+        return $this->photoRepository->decrement($id);
     }
+
+    /**
+     * Move a photo down into a less prominent position
+     *
+     * This actually requires an increase in its ranking
+     */
+    public function moveDown($id)
+    {
+        $photo = $this->photoRepository->find($id);
+        return $this->photoRepository->increment($id);
+    }
+
 
 
 }

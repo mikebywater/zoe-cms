@@ -35,6 +35,8 @@ Route::group(['middleware' => 'auth' , 'prefix' => 'admin'], function ()
 {
 
     Route::resource('photos', 'PhotoController');
+    Route::post('/photos/{id}/up' , 'PhotoController@moveUp');
+    Route::post('/photos/{id}/down' , 'PhotoController@moveDown');
     Route::resource('categories', 'CategoryController');
     Route::resource('pages', 'PageController');
 
