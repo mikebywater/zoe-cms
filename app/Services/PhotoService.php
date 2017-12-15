@@ -24,7 +24,7 @@ class PhotoService
      */
     public function all()
     {
-        return $this->photoRepository->all();
+        return $this->photoRepository->top100();
     }
 
     /**
@@ -47,6 +47,7 @@ class PhotoService
 
         // Write metadata to db
         $data['url'] = $this->baseUrl . $filePath;
+        $data['rank'] = $this->photoRepository->getHighestRank() + 1;
         unset($data['photo']);
         $this->photoRepository->create($data);
     }
@@ -55,15 +56,39 @@ class PhotoService
      * Delete a photo from disk and remove its metadata
      *
      * @param $id
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function delete($id)
     {
         $photo = $this->photoRepository->find($id);
         $filepath = explode($this->baseUrl ,$photo->url)[1];
         $this->storage->delete($filepath);
+        $this->photoRepository->decrementHigherRank($photo->rank);
         return $this->photoRepository->delete($id);
+
     }
+
+    /**
+     * Move a photo up into a more prominent position
+     *
+     * This actually requires a reduction in its ranking
+     */
+    public function moveUp($id)
+    {
+        $photo = $this->photoRepository->find($id);
+        return $this->photoRepository->decrement($id);
+    }
+
+    /**
+     * Move a photo down into a less prominent position
+     *
+     * This actually requires an increase in its ranking
+     */
+    public function moveDown($id)
+    {
+        $photo = $this->photoRepository->find($id);
+        return $this->photoRepository->increment($id);
+    }
+
 
 
 }

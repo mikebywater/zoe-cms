@@ -6,7 +6,7 @@
 <!-- content -->
 
 <!-- portfolio section -->
-<section id="portfolio" class="">
+<section id="portfolio">
     <div class="container">
         <!-- portfolio filter -->
         <ul class="portfolio-filter list-inline text-center">
@@ -23,7 +23,7 @@
                 <div class="img-bg-color primary">
                     <a href="single-project.html" class="project-link"></a>
                     <!-- / project-link -->
-                    <img src="{{$photo->url}}" alt="">
+                    <img src="{{$photo->url}}" alt="{{$photo->title}}">
                     <!-- / project-image -->
 
                     <!-- project-hover-tools -->
