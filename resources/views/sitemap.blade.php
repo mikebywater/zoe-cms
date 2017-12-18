@@ -20,4 +20,12 @@
     </url>
     @endforeach
 
+    <url>
+
+        <loc>{{url('/')}}/reviews</loc>
+
+        <lastmod>{{\Carbon\Carbon::now()->format('Y-m-d')}}</lastmod>
+
+    </url>
+
 </urlset>
