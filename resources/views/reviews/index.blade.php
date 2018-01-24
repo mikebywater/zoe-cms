@@ -50,5 +50,10 @@
                 @endif
              @endforeach
         </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <a href="{{$link}}" class="btn btn-primary-filled">Leave Review</a>
+            </div>
+        </div>
     <br>
 @endsection
