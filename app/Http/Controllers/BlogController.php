@@ -18,9 +18,10 @@ class BlogController extends Controller
 
     public function index()
     {
-        $pages = $this->pageService->articles();
+        $posts = $this->pageService->articles();
+        $pages = $this->pageService->pages();
         $templates = $this->pageService->templates();
-        return view('blog')->with(['pages' => $pages , 'templates' => $templates]);
+        return view('blog')->with(['pages' => $pages , 'templates' => $templates , 'posts' => $posts]);
     }
 
     /**
