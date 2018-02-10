@@ -26,4 +26,9 @@ class PageRepository extends Repository
         return $this->model->where('is_blog_page' , true)->get();
     }
 
+    public function pages()
+    {
+        return $this->model->where('is_blog_page' , false)->get();
+    }
+
 }

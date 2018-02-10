@@ -32,7 +32,7 @@ class PageController extends Controller
     {
         $data = array();
         $page = $this->pageService->findByName($name);
-        $pages = $this->pageService->all();
+        $pages = $this->pageService->pages();
         $fields = $page->fields;
         foreach ($fields as $field) {
             $data[$field->name] = $field->value;

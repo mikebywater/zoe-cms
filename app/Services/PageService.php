@@ -30,6 +30,14 @@ class PageService
     }
 
     /**
+     * Get all pages that are not blog articles
+     */
+    public function pages()
+    {
+        return $this->pageRepository->pages();
+    }
+
+    /**
      * Get all blog pages / articles
      */
     public function articles()
