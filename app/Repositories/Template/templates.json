@@ -1,5 +1,42 @@
 [
   {
+    "name": "article",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "sub_title",
+        "type": "string"
+      },
+      {
+        "name": "heading1",
+        "type": "string"
+      },
+      {
+        "name": "section1",
+        "type": "rich-text"
+      },
+      {
+        "name": "heading2",
+        "type": "string"
+      },
+      {
+        "name": "section2",
+        "type": "rich-text"
+      },
+      {
+        "name": "heading3",
+        "type": "string"
+      },
+      {
+        "name": "section3",
+        "type": "rich-text"
+      }
+    ]
+  },
+  {
     "name": "page",
     "fields": [
       {

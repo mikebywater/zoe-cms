@@ -20,6 +20,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/pages/{name}', 'PageController@show');
 
+Route::get('/blog', 'BlogController@index');
+
 Route::get('/google278d3acd537d5b85.html', function () {
     return view('google');
 });

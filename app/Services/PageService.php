@@ -30,6 +30,14 @@ class PageService
     }
 
     /**
+     * Get all blog pages / articles
+     */
+    public function articles()
+    {
+        return $this->pageRepository->articles();
+    }
+
+    /**
  * Get all templates
  */
     public function templates()

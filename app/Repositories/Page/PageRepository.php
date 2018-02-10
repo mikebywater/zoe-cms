@@ -21,4 +21,9 @@ class PageRepository extends Repository
         return $this->model->where('name' , $name)->first();
     }
 
+    public function articles()
+    {
+        return $this->model->where('is_blog_page' , true)->get();
+    }
+
 }
