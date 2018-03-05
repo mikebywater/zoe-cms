@@ -71,7 +71,7 @@ class PageController extends Controller
      */
     public function updateFields($id, Request $request)
     {
-        $this->pageService->updateFields($id, $request->all());
+        $this->pageService->updateFields($id, $request);
         return redirect('admin/pages/' . $id . '/edit');
     }
 

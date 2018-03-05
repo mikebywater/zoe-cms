@@ -7,6 +7,10 @@
         "type": "string"
       },
       {
+        "name": "mainImage",
+        "type": "image"
+      },
+      {
         "name": "sub_title",
         "type": "string"
       },
