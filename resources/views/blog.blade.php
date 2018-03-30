@@ -31,7 +31,7 @@
                             <div class="small-post-text">
                                 <h5><a href="/pages/{{$post->name}}">{{strtoupper($post->name)}}</a></h5>
                                 <p class="small-post-meta">{{$post->created_at->format('d/m/Y')}}</p>
-                                <p class="space-bottom">{{$post->field('summary')->value}}</p>
+                                <p class="space-bottom">{!!$post->field('summary')->value!!}</p>
                                 <p class="small-post-footer">
                                     <a href="/pages/{{$post->name}}">READ MORE</a>
                                 </p>

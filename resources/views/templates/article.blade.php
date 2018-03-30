@@ -9,7 +9,7 @@
                     <div class="banner-content single-page text-center">
                         <div class="banner-info">
                             <h1>{{$fields->title}}</h1>
-                            <p>{{$fields->summary}}</p>
+                            <p>{!!$fields->summary!!}</p>
                         </div><!-- / banner-info -->
                     </div><!-- / banner-content -->
                 </div>
