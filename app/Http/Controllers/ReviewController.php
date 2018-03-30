@@ -22,7 +22,7 @@ class ReviewController extends Controller
     {
         $reviews = $this->reviewService->all();
         $link = $this->reviewService->link();
-        $pages = $this->pageService->all();
+        $pages = $this->pageService->pages();
         return view('reviews.index')->with(['reviews' => $reviews , 'link' => $link, 'pages' => $pages]);
     }
 }

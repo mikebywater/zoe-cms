@@ -12,6 +12,7 @@
                             @foreach ($pages as $page)
                                 <tr>
                                     <td><a href="/admin/pages/{{$page->id}}/edit">{{$page->name}}</a></td>
+                                    <td>{{$page->is_blog_page}}</td>
                                     <td >
                                         <form class="pull-right" action="/admin/pages/{{$page->id}}" method="post">
                                             {{csrf_field()}}
@@ -43,6 +44,8 @@
                                         <option>{{$template->name}}</option>
                                     @endforeach
                                 </select>
+
+                                <input type="checkbox" name="is_blog_page"/>
 
                                 <button type="form-submit" class = "btn btn-md btn-success">Create</button>
                             </form>

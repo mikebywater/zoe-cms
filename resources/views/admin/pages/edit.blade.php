@@ -44,6 +44,8 @@
                                     <div class="col-md-8">
                                         @if($field->type == 'string')
                                             <input id="{{$field->name}}" type="text" class="form-control" name="{{$field->name}}" value="{{$field->value}}" required autofocus>
+                                        @elseif($field->type == 'image')
+                                            <input type="file" id="{{$field->name}}" class="form-control" name="{{$field->name}}" />
                                         @else
                                             <textarea class="summernote" name="{{$field->name}}" value="{{$field->value}}" required autofocus>{{$field->value}}</textarea>
                                         @endif

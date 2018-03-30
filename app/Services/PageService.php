@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Repositories\Field\FieldRepository;
 use App\Repositories\Page\PageRepository;
 use App\Repositories\Template\TemplateRepository;
+use GuzzleHttp\Psr7\UploadedFile;
 
 class PageService
 {
@@ -27,6 +28,22 @@ class PageService
     public function all()
     {
         return $this->pageRepository->all();
+    }
+
+    /**
+     * Get all pages that are not blog articles
+     */
+    public function pages()
+    {
+        return $this->pageRepository->pages();
+    }
+
+    /**
+     * Get all blog pages / articles
+     */
+    public function articles()
+    {
+        return $this->pageRepository->articles();
     }
 
     /**
@@ -68,13 +85,18 @@ class PageService
         return $this->pageRepository->update($id,$data);
     }
 
-    public function updateFields($id , $data)
+    public function updateFields($id , $request)
     {
+        $data = $request->all();
         unset($data['_token']);
         unset($data['_method']);
         $keys = array_keys($data);
         foreach($keys as $key){
             $field = $this->fieldRepository->findByPageAndName($id, $key);
+            if($field->type == 'image'){
+                $file = $request->file($field->name);
+                $data[$key] = base64_encode(file_get_contents($file));
+            }
             $this->fieldRepository->update($field->id,array('name' => $key , 'value' => $data[$key]));
         }
     }
@@ -83,7 +105,6 @@ class PageService
      * Delete a page
      *
      * @param $id
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function delete($id)
     {

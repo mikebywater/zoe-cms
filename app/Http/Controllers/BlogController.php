@@ -6,7 +6,7 @@ use App\Repositories\Field\Field;
 use App\Services\PageService;
 use Illuminate\Http\Request;
 
-class PageController extends Controller
+class BlogController extends Controller
 {
 
     protected $pageService;
@@ -18,9 +18,10 @@ class PageController extends Controller
 
     public function index()
     {
-        $pages = $this->pageService->all();
+        $posts = $this->pageService->articles();
+        $pages = $this->pageService->pages();
         $templates = $this->pageService->templates();
-        return view('admin.pages.index')->with(['pages' => $pages , 'templates' => $templates]);
+        return view('blog')->with(['pages' => $pages , 'templates' => $templates , 'posts' => $posts]);
     }
 
     /**
@@ -32,12 +33,12 @@ class PageController extends Controller
     {
         $data = array();
         $page = $this->pageService->findByName($name);
-        $pages = $this->pageService->pages();
+        $pages = $this->pageService->all();
         $fields = $page->fields;
         foreach ($fields as $field) {
             $data[$field->name] = $field->value;
         }
-        return view("templates.$page->template")->with(['page' => $page, 'pages' => $pages, 'fields' => (object)$data]);
+        return view("templates.$page->template")->with(['pages' => $pages, 'fields' => (object)$data]);
     }
 
     /**
@@ -71,7 +72,7 @@ class PageController extends Controller
      */
     public function updateFields($id, Request $request)
     {
-        $this->pageService->updateFields($id, $request);
+        $this->pageService->updateFields($id, $request->all());
         return redirect('admin/pages/' . $id . '/edit');
     }
 
@@ -83,13 +84,7 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->all();
-        if (isset($data['is_blog_page'])) {
-            if($data['is_blog_page']){
-                $data['is_blog_page'] = 1;
-            }
-        }
-        $this->pageService->create($data);
+        $this->pageService->create($request->all());
         return redirect('/admin/pages');
     }
 

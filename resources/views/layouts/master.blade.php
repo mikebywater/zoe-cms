@@ -87,6 +87,7 @@
                                 <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
                             @endforeach
                         @endif
+                        <li><a href="/blog"><span>BLOG</span></a></li>
                         <li><a href="/reviews"><span>REVIEWS</span></a></li>
                     </ul>
 

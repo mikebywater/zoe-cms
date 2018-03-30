@@ -37,7 +37,7 @@ class HomeController extends Controller
     {
         $photos = $this->photoService->all();
         $categories = $this->categoryService->all();
-        $pages = $this->pageService->all();
+        $pages = $this->pageService->pages();
         return view('home')->with(['photos' => $photos , 'categories' => $categories , 'pages' => $pages ]);
     }
 }

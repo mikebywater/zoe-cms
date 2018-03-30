@@ -1,5 +1,58 @@
 [
   {
+    "name": "article",
+    "fields": [
+      {
+         "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "mainImage",
+        "type": "image"
+      },
+      {
+        "name": "summary",
+        "type": "rich-text"
+      },
+      {
+        "name": "heading1",
+        "type": "string"
+      },
+      {
+        "name": "image1",
+        "type": "image"
+      },
+      {
+        "name": "section1",
+        "type": "rich-text"
+      },
+      {
+        "name": "heading2",
+        "type": "string"
+      },
+      {
+        "name": "section2",
+        "type": "rich-text"
+      },
+      {
+        "name": "image2",
+        "type": "image"
+      },
+      {
+        "name": "heading3",
+        "type": "string"
+      },
+      {
+        "name": "section3",
+        "type": "rich-text"
+      },
+      {
+        "name": "image3",
+        "type": "image"
+      }
+    ]
+  },
+  {
     "name": "page",
     "fields": [
       {
