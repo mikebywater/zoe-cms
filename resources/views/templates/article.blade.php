@@ -9,7 +9,7 @@
                     <div class="banner-content single-page text-center">
                         <div class="banner-info">
                             <h1>{{$fields->title}}</h1>
-                            <p>{{$fields->sub_title}}</p>
+                            <p>{{$fields->summary}}</p>
                         </div><!-- / banner-info -->
                     </div><!-- / banner-content -->
                 </div>
@@ -28,12 +28,12 @@
                             <img src="data:image/png;base64,{{$fields->mainImage}}" alt="{{$fields->title}}">
                             <div class="post-info-box">
                                 <h3>{{$fields->heading1}}</h3>
-                                <p class="post-meta">Posted by <a href="#">Zoe Bywater</a> on 01/01/15</p>
+                                <p class="post-meta">Posted by <a href="#">Zoe Bywater</a> on {{$page->created_at->format('d/m/Y')}}</p>
                                 {!! $fields->section1!!}
                                 <div class="media">
                                     <div class="media-left">
                                         <a href="#">
-                                            <img class="media-object" src="/images/content-img-small.jpg" alt="">
+                                            <img class="media-object" src="data:image/png;base64,{{$fields->image1}}" alt="">
                                         </a>
                                     </div><!-- media-alignment -->
                                     <div class="media-body">
@@ -45,7 +45,7 @@
                                 <div class="media">
                                     <div class="media-right">
                                         <a href="#">
-                                            <img class="media-object" src="/images/content-img-small.jpg" alt="">
+                                            <img class="media-object" src="data:image/png;base64,{{$fields->image2}}" alt="">
                                         </a>
                                     </div><!-- media-alignment -->
                                     <div class="media-body">

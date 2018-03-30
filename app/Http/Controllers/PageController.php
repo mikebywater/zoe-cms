@@ -37,7 +37,7 @@ class PageController extends Controller
         foreach ($fields as $field) {
             $data[$field->name] = $field->value;
         }
-        return view("templates.$page->template")->with(['pages' => $pages, 'fields' => (object)$data]);
+        return view("templates.$page->template")->with(['page' => $page, 'pages' => $pages, 'fields' => (object)$data]);
     }
 
     /**
