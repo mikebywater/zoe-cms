@@ -113,7 +113,7 @@
                 ['undo' , ['undo']],
                 ['redo' , ['redo']],
                 ['font', ['bold', 'italic', 'underline']],
-                ['para', ['ol', 'paragraph']],
+                ['para', ['ol', 'ul' ,'paragraph']],
                 ['link' , ['link']],
                 ['fullscreen' , ['fullscreen']],
             ]
