@@ -74,27 +74,104 @@
     "fields": [
       {
         "name": "title",
-        "type": "text"
+        "type": "string"
       },
       {
         "name": "description",
-        "type": "text"
+        "type": "string"
       },
       {
         "name": "facebook",
-        "type": "text"
+        "type": "string"
       },
       {
         "name": "instagram",
-        "type": "text"
+        "type": "string"
       },
       {
         "name": "phone",
-        "type": "text"
+        "type": "string"
       },
       {
         "name": "email",
         "type": "email"
+      }
+    ]
+  },
+  {
+    "name": "prices2x3",
+    "fields": [
+      {
+        "name": "list1_title1",
+        "type": "string"
+      },
+      {
+        "name": "list1_price1",
+        "type": "string"
+      },
+      {
+        "name": "list1_description1",
+        "type": "rich-text"
+      },
+      {
+        "name": "list1_title2",
+        "type": "string"
+      },
+      {
+        "name": "list1_price2",
+        "type": "string"
+      },
+      {
+        "name": "list1_description2",
+        "type": "rich-text"
+      },
+      {
+        "name": "list1_title3",
+        "type": "string"
+      },
+      {
+        "name": "list1_price3",
+        "type": "string"
+      },
+      {
+        "name": "list1_description3",
+        "type": "rich-text"
+      },
+      {
+        "name": "list2_title1",
+        "type": "string"
+      },
+      {
+        "name": "list2_price1",
+        "type": "string"
+      },
+      {
+        "name": "list2_description1",
+        "type": "rich-text"
+      },
+      {
+        "name": "list2_title2",
+        "type": "string"
+      },
+      {
+        "name": "list2_price2",
+        "type": "string"
+      },
+      {
+        "name": "list2_description2",
+        "type": "rich-text"
+      },
+      {
+        "name": "list2_title3",
+        "type": "string"
+      },
+      {
+        "name": "list2_price3",
+        "type": "string"
+      },
+      {
+        "name": "list2_description3",
+        "type": "rich-text"
       }
     ]
   }
