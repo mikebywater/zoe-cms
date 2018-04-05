@@ -33,7 +33,7 @@
                         <div class="pricing-table-content">
                             {!! $fields->list1_description1 !!}
                             <div class="pricing-table-button">
-                                <a href="#x" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
+                                <a href="/pages/Contact" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@
                         <div class="pricing-table-content">
                             {!! $fields->list1_description2 !!}
                             <div class="pricing-table-button">
-                                <a href="#x" class="btn btn-lg btn-primary-filled"><strong>BOOK NOW</strong></a>
+                                <a href="/pages/Contact" class="btn btn-lg btn-primary-filled"><strong>BOOK NOW</strong></a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                         <div class="pricing-table-content">
                             {!! $fields->list1_description3 !!}
                             <div class="pricing-table-button">
-                                <a href="#x" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
+                                <a href="/pages/Contact" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                         <div class="pricing-table-content">
                             {!! $fields->list2_description1 !!}
                             <div class="pricing-table-button">
-                                <a href="#x" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
+                                <a href="/pages/Contact" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                         <div class="pricing-table-content">
                             {!! $fields->list2_description2 !!}
                             <div class="pricing-table-button">
-                                <a href="#x" class="btn btn-lg btn-primary-filled"><strong>BOOK NOW</strong></a>
+                                <a href="/pages/Contact" class="btn btn-lg btn-primary-filled"><strong>BOOK NOW</strong></a>
                             </div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                         <div class="pricing-table-content">
                             {!! $fields->list2_description3 !!}
                             <div class="pricing-table-button">
-                                <a href="#x" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
+                                <a href="/pages/Contact" class="btn btn-primary-filled"><strong>BOOK NOW</strong></a>
                             </div>
                         </div>
                     </div>
