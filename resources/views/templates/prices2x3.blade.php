@@ -152,5 +152,8 @@
             </div><!-- / row -->
         </div><!-- / pricing -->
         <!-- / stacked pricing table 3col -->
+        <div class="row">
+                {!!$fields->footer!!}
+        </div>
     </div>
 @endsection
