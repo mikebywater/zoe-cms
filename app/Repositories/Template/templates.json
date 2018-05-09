@@ -178,5 +178,58 @@
         "type": "rich-text"
       }
     ]
+  },
+  {
+    "name": "prices1x3",
+    "fields": [
+      {
+        "name": "heading",
+        "type": "string"
+      },
+      {
+        "name": "subheading",
+        "type": "string"
+      },
+      {
+        "name": "list1_title1",
+        "type": "string"
+      },
+      {
+        "name": "list1_price1",
+        "type": "string"
+      },
+      {
+        "name": "list1_description1",
+        "type": "rich-text"
+      },
+      {
+        "name": "list1_title2",
+        "type": "string"
+      },
+      {
+        "name": "list1_price2",
+        "type": "string"
+      },
+      {
+        "name": "list1_description2",
+        "type": "rich-text"
+      },
+      {
+        "name": "list1_title3",
+        "type": "string"
+      },
+      {
+        "name": "list1_price3",
+        "type": "string"
+      },
+      {
+        "name": "list1_description3",
+        "type": "rich-text"
+      },
+      {
+        "name": "footer",
+        "type": "rich-text"
+      }
+    ]
   }
 ]
