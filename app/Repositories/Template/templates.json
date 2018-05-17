@@ -102,14 +102,6 @@
     "name": "prices2x3",
     "fields": [
       {
-        "name": "heading",
-        "type": "string"
-      },
-      {
-        "name": "subheading",
-        "type": "string"
-      },
-      {
         "name": "list1_title1",
         "type": "string"
       },
@@ -237,6 +229,27 @@
       {
         "name": "footer",
         "type": "rich-text"
+      }
+    ]
+  },
+  {
+    "name": "vlog",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "name": "mainImage",
+        "type": "image"
+      },
+      {
+        "name": "summary",
+        "type": "rich-text"
+      },
+      {
+        "name": "video_url",
+        "type": "string"
       }
     ]
   }
