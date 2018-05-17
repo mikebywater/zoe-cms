@@ -5,8 +5,8 @@
         <div id="header-banner">
             <div class="banner-content single-page text-center">
                 <div class="banner-info">
-                    <h1>Pricing</h1>
-                    <p>All Prices</p>
+                    <h1>{{$fields->heading}}</h1>
+                    <p>{{$fields->subheading}}</p>
                 </div><!-- / banner-info -->
             </div><!-- / banner-content -->
         </div>

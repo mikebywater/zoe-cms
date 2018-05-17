@@ -102,6 +102,14 @@
     "name": "prices2x3",
     "fields": [
       {
+        "name": "heading",
+        "type": "string"
+      },
+      {
+        "name": "subheading",
+        "type": "string"
+      },
+      {
         "name": "list1_title1",
         "type": "string"
       },
