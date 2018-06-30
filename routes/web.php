@@ -22,6 +22,8 @@ Route::get('/pages/{name}', 'PageController@show');
 
 Route::get('/blog', 'BlogController@index');
 
+Route::get('/gallery', 'HomeController@gallery');
+
 Route::get('/google278d3acd537d5b85.html', function () {
     return view('google');
 });

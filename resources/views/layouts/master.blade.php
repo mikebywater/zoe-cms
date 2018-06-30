@@ -82,6 +82,7 @@
 
                     <ul class="nav navbar-nav">
                         <li><a href="/home"><span>HOME</span></a></li>
+                        <li><a href="/gallery"><span>GALLERY</span></a></li>
                         @if(isset($pages))
                             @foreach($pages as $page)
                                 <li><a href="/pages/{{$page->name}}"><span>{{strtoupper($page->name)}}</span></a></li>
@@ -145,19 +146,7 @@
 <!-- preloader -->
 <script src="/js/preloader.js"></script>
 <!-- / preloader -->
-<script type="text/javascript">
-    var vglnk = { key: '9bfef1b05ff36af136fc696cf799ba2c' };
-​
-    (function(d, t) {
-        var s = d.createElement(t);
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = '//cdn.viglink.com/api/vglnk.js';
-        var r = d.getElementsByTagName(t)[0];
-        r.parentNode.insertBefore(s, r);
-    }(document, 'script'));
-</script>
-<!-- / javascript -->
+
 </body>
 
 </html>

@@ -27,7 +27,7 @@
                 <div class="col-md-6">
                     <div class="post-block">
                         <div class="small-post-text">
-                            <h5>{{$review->author_name}}</h5>
+                            <h5>{{ucwords($review->author_name)}}</h5>
                             <p class="small-post-meta">{{\Carbon\Carbon::createFromTimestamp($review->time)->toFormattedDateString()}}</p>
                             <p class="space-bottom">{{$review->text}}</p>
                             <p class="small-post-footer">

@@ -33,11 +33,18 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function gallery()
     {
         $photos = $this->photoService->all();
         $categories = $this->categoryService->all();
         $pages = $this->pageService->pages();
-        return view('home')->with(['photos' => $photos , 'categories' => $categories , 'pages' => $pages ]);
+        return view('gallery')->with(['photos' => $photos , 'categories' => $categories , 'pages' => $pages ]);
+    }
+
+    public function index()
+    {
+        $categories = $this->categoryService->all();
+        $pages = $this->pageService->pages();
+        return view('home')->with(['categories' => $categories , 'pages' => $pages ]);
     }
 }
