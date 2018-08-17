@@ -14,6 +14,7 @@
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -29,6 +30,9 @@
                 </div>
                 <div class="item">
                     <img src="/images/couple.jpg" alt="...">
+                </div>
+                <div class="item">
+                    <img src="/images/photoshoot.jpg" alt="...">
                 </div>
 
 
