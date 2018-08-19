@@ -45,6 +45,7 @@ class HomeController extends Controller
     {
         $categories = $this->categoryService->all();
         $pages = $this->pageService->pages();
-        return view('home')->with(['categories' => $categories , 'pages' => $pages ]);
+        $posts = $this->pageService->articles()->take(3);
+        return view('home')->with(['categories' => $categories , 'pages' => $pages, 'posts' => $posts ]);
     }
 }
