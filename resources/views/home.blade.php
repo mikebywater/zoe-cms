@@ -95,7 +95,6 @@
         <div class="page-header no-margin text-center">
             <h2>LATEST POSTS</h2>
         </div>
-        <p class="text-center">Sed imperdiet vitae ipsum a tincidunt. Vivamus id ligula turpis. Duis viverra arcu quis.</p>
         <div class="row">
 
         @foreach ($posts as $post)
