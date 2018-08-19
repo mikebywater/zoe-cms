@@ -2366,14 +2366,14 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 
 .about-img {
   position: absolute;
-  background: url(../images/about-img.jpg) scroll center no-repeat;
+  background: url(/images/ima-logo2.png) scroll center no-repeat;
   background-size: cover;
   height: 100%;
 }
 
 .about-me-img {
   position: absolute;
-  background: url(../images/about-me-img.jpg) scroll center no-repeat;
+  background: url(/images/ima-logo2.png) scroll center no-repeat;
   background-size: cover;
   height: 100%;
 }

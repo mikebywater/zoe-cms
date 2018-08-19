@@ -54,34 +54,114 @@
 
 <!-- team section 4col -->
 <section id="team">
-    <h2 class="text-center space-top-2x">ABOUT ME</h2>
     <div class="row">
-        <!-- team-block -->
-        <div class="col-md-offset-1 col-md-10 ">
-            <div class="team block text-center">
-                <p>
-                    Shropshires luxury IMA qualified bridal and special occasion makeup artist, Zoe Bywater provides on-location makeup services. Committed to offering the absolute best services in her market, she has an extensive knowledge of her field.
-                </p>
-                <p>
-                    Zoe offers a level of expertise and client care at the highest standard. Although a newly established business, to date she has made up numerous clients for both weddings and special occasions, resulting in an excellent reputation. Taking a limited amount of bookings per year.
-                </p>
-                <p>
-                    If you've got a big event coming up and your looking for a professional makeup artist in Telford, Bridgnorth, and other areas in Shropshire Zoe will make you a perfectly polished version of yourself. Starting with the absolutely flawless base and discussing all of your wants and needs. Whether this be for your big day, a work event, photo shoot or a great night out.
-                </p>
-                <p>
-                    Freelance makeup artist covering Telford, Newport, Bridgnorth and Shrewsbury. Basically a Shropshire makeup artist. Zoe offers the ultimate luxury service in bridal makeup, these appointments are limited wedding and special occasion appointments, so that Zoe can provide the highest quality care and attention to all of her brides and clients, giving an altogether more intimate and tailored experience.
-                </p>
-                <p>
-                    For Zoe there is absolutely nothing better than making someone feel extra special through the application of make up. Zoe is here to make you feel and look more beautiful than your already beautiful self.
-                </p>
-                <p>
-                    Have a look at the q&a page for extra information.
-                </p>
-            </div><!-- / team-block -->
-        </div><!-- / col-sm-4 -->
-        <!-- / team-block -->
+        <div class="section-w-image">
+            <div class="row">
+                <div class="col-sm-6 about-me-img"><p></p></div>
+                <div class="col-sm-6 col-sm-offset-6 about-description">
+                    <h4>ABOUT ZOE</h4>
+                    <p>
+                        Shropshires luxury IMA qualified bridal and special occasion makeup artist, Zoe Bywater provides on-location makeup services. Committed to offering the absolute best services in her market, she has an extensive knowledge of her field.
+                    </p>
+
+                    <p>
+                        Zoe offers a level of expertise and client care at the highest standard. Although a newly established business, to date she has made up numerous clients for both weddings and special occasions, resulting in an excellent reputation. Taking a limited amount of bookings per year.
+                    </p>
+                    <img class="visible-xs" src="/images/ima-logo2.png">
+                    <p>
+                        If you've got a big event coming up and your looking for a professional makeup artist in Telford, Bridgnorth, and other areas in Shropshire Zoe will make you a perfectly polished version of yourself. Starting with the absolutely flawless base and discussing all of your wants and needs. Whether this be for your big day, a work event, photo shoot or a great night out.
+                    </p>
+                    <p>
+                        Freelance makeup artist covering Telford, Newport, Bridgnorth and Shrewsbury. Basically a Shropshire makeup artist. Zoe offers the ultimate luxury service in bridal makeup, these appointments are limited wedding and special occasion appointments, so that Zoe can provide the highest quality care and attention to all of her brides and clients, giving an altogether more intimate and tailored experience.
+                    </p>
+                    <p>
+                        For Zoe there is absolutely nothing better than making someone feel extra special through the application of make up. Zoe is here to make you feel and look more beautiful than your already beautiful self.
+                    </p>
+                    <p>
+                        Have a look at the q&a page for extra information.
+                    </p>
+
+
+                </div><!-- / about-description -->
+            </div><!-- / row -->
+        </div><!-- / section-w-image -->
+
     </div>
 </section>
+
+<!-- blog section 3col -->
+<section id="blog-small">
+    <div class="container">
+        <div class="page-header no-margin text-center">
+            <h2>LATEST POSTS</h2>
+        </div>
+        <p class="text-center">Sed imperdiet vitae ipsum a tincidunt. Vivamus id ligula turpis. Duis viverra arcu quis.</p>
+        <div class="row">
+
+            <!-- post-block -->
+            <div class="col-sm-4">
+                <div class="post-block">
+                    <a href="single-post.html"><img src="images/post-img.jpg" alt=""></a>
+                    <div class="small-post-text">
+                        <h5><a href="single-post.html">SINGLE POST</a></h5>
+                        <p class="small-post-meta">AUG 16, 2016</p>
+                        <p class="space-bottom">Suspendisse in mattis neque, sed accumsan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam...</p>
+                        <p class="small-post-footer">
+                            <a href="single-post.html">READ MORE</a>
+                            <span class="post-icons pull-right">
+                                <a href="#x"><i class="lnr lnr-thumbs-up"></i></a>
+                                <a href="#x"><i class="lnr lnr-bubble"></i></a>
+                            </span>
+                        </p>
+                    </div><!-- / small-post-text -->
+                </div><!-- / post-block -->
+            </div><!-- / col-md-4 -->
+            <!-- / post-block -->
+
+            <!-- post-block -->
+            <div class="col-sm-4">
+                <div class="post-block">
+                    <a href="single-post-full.html"><img src="images/post-img.jpg" alt=""></a>
+                    <div class="small-post-text">
+                        <h5><a href="single-post-full.html">FULLWIDTH POST</a></h5>
+                        <p class="small-post-meta">AUG 16, 2016</p>
+                        <p class="space-bottom">Suspendisse in mattis neque, sed accumsan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam...</p>
+                        <p class="small-post-footer">
+                            <a href="single-post-full.html">READ MORE</a>
+                            <span class="post-icons pull-right">
+                                <a href="#x"><i class="lnr lnr-thumbs-up"></i></a>
+                                <a href="#x"><i class="lnr lnr-bubble"></i></a>
+                            </span>
+                        </p>
+                    </div><!-- / small-post-text -->
+                </div><!-- / post-block -->
+            </div><!-- / col-md-4 -->
+            <!-- / post-block -->
+
+            <!-- post-block -->
+            <div class="col-sm-4">
+                <div class="post-block">
+                    <a href="single-post.html"><img src="images/post-img.jpg" alt=""></a>
+                    <div class="small-post-text">
+                        <h5><a href="single-post.html">POST WITH SIDEBAR</a></h5>
+                        <p class="small-post-meta">AUG 16, 2016</p>
+                        <p class="space-bottom">Suspendisse in mattis neque, sed accumsan erat. Maecenas eget metus dui. Vestibulum accumsan massa quam...</p>
+                        <p class="small-post-footer">
+                            <a href="single-post.html">READ MORE</a>
+                            <span class="post-icons pull-right">
+                                <a href="#x"><i class="lnr lnr-thumbs-up"></i></a>
+                                <a href="#x"><i class="lnr lnr-bubble"></i></a>
+                            </span>
+                        </p>
+                    </div><!-- / small-post-text -->
+                </div><!-- / post-block -->
+            </div><!-- / col-md-4 -->
+            <!-- / post-block -->
+
+        </div><!-- / row -->
+    </div><!-- / container -->
+</section>
+<!-- / blog section 3col -->
 
 
 
