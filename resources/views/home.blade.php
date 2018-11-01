@@ -24,6 +24,9 @@
                     <img src="/images/2face.jpg" alt="...">
                 </div>
                 <div class="item">
+                    <img src="/images/highbury.jpg" alt="...">
+                </div>
+                <div class="item">
                     <img src="/images/oliviaside.png" alt="...">
                 </div>
                 <div class="item">
@@ -38,9 +41,6 @@
                 <div class="item">
                     <img src="/images/photoshoot.jpg" alt="...">
                 </div>
-
-
-
             </div>
 
             <!-- Controls -->
@@ -70,7 +70,7 @@
                     </p>
 
                     <p>
-                        Zoe offers a level of expertise and client care at the highest standard. Although a newly established business, to date she has made up numerous clients for both weddings and special occasions, resulting in an excellent reputation. Taking a limited amount of bookings per year.
+                        Zoe offers a level of expertise and client care at the highest standard. To date she has made up numerous clients for both weddings and special occasions, resulting in an excellent reputation. Taking a limited amount of bookings per year.
                     </p>
                     <img class="visible-xs" src="/images/ima-logo2.png">
                     <p>
