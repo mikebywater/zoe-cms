@@ -7,7 +7,7 @@
 
 <!-- portfolio section -->
 <section id="portfolio">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="4500" >
             <!-- Indicators -->
             <ol class="carousel-indicators hidden-sm hidden-xs">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -20,7 +20,7 @@
             </ol>
 
             <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner" role="listbox" >
                 <div class="item active">
                     <img src="/images/mirrorwebsite.jpg" alt="...">
                 </div>
