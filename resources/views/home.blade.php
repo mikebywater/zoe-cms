@@ -16,11 +16,15 @@
                 <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
+                    <img src="/images/mirrorwebsite.jpg" alt="...">
+                </div>
+                <div class="item">
                     <img src="/images/2face.jpg" alt="...">
                 </div>
                 <div class="item">
