@@ -23,6 +23,9 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" >
                 <div class="item active">
+                    <img src="/images/davenport2.jpg" alt="...">
+                </div>
+                <div class="item">
                     <img src="/images/mirrorwebsite.jpg" alt="...">
                 </div>
                 <div class="item">
@@ -45,9 +48,6 @@
                 </div>
                 <div class="item">
                     <img src="/images/photoshoot.jpg" alt="...">
-                </div>
-                <div class="item">
-                    <img src="/images/davenport2.jpg" alt="...">
                 </div>
             </div>
 
