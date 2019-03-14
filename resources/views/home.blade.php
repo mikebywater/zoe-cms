@@ -29,6 +29,9 @@
                     <img src="/images/mirrorwebsite.jpg" alt="...">
                 </div>
                 <div class="item">
+                    <img src="/images/big-room.jpg" alt="...">
+                </div>
+                <div class="item">
                     <img src="/images/2face.jpg" alt="...">
                 </div>
                 <div class="item">
