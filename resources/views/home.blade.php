@@ -77,14 +77,8 @@
                 <div class="col-sm-6 col-sm-offset-6 about-description">
                     <h4>ABOUT ZOE</h4>
 
-
-
-
-
-
-
                     <p>
-                        Zoe is Shropshire’s award winning and highly sought after makeup artist. Zoe is no ordinary makeup artist, trained by top makeup artists James Malloy, Danessa Myricks and the industries top brand Kryolan as well as being IMA qualified. Zoe specialises in exceptional bridal and special occasion makeup, Zoe provides on-location high end makeup services. Committed to offering the absolute best services in her market, she has an extensive knowledge and boundless skillsinf her field which is what makes her the makeup artist everyone wants.
+                        Shropshire’s award winning and highly sought after makeup artist. Zoe is no ordinary makeup artist, trained by top makeup artists James Malloy, Danessa Myricks and the industries top brand Kryolan as well as being IMA qualified. Zoe specialises in exceptional bridal and special occasion makeup, Zoe provides on-location high end makeup services. Committed to offering the absolute best services in her market, she has an extensive knowledge and boundless skillsinf her field which is what makes her the makeup artist everyone wants.
                     </p>
 
                     <p>
@@ -100,7 +94,7 @@
                     <p>
                         Zoe takes the utmost pride in her makeup kit ensuring all products are high quality brands that are ensured to give you the most beautiful look which will stay on all day. For Zoe there is absolutely nothing better than making someone feel extra special through the application of make up. Zoe is here to make you feel and look more beautiful than your already beautiful self.
                     </p>
-                    
+
                 </div><!-- / about-description -->
             </div><!-- / row -->
         </div><!-- / section-w-image -->
