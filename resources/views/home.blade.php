@@ -76,28 +76,31 @@
                 <div class="col-sm-6 about-me-img"><p></p></div>
                 <div class="col-sm-6 col-sm-offset-6 about-description">
                     <h4>ABOUT ZOE</h4>
+
+
+
+
+
+
+
                     <p>
-                        Shropshires luxury IMA qualified bridal and special occasion makeup artist, Zoe Bywater provides on-location makeup services. Committed to offering the absolute best services in her market, she has an extensive knowledge of her field.
+                        Zoe is Shropshire’s award winning and highly sought after makeup artist. Zoe is no ordinary makeup artist, trained by top makeup artists James Malloy, Danessa Myricks and the industries top brand Kryolan as well as being IMA qualified. Zoe specialises in exceptional bridal and special occasion makeup, Zoe provides on-location high end makeup services. Committed to offering the absolute best services in her market, she has an extensive knowledge and boundless skillsinf her field which is what makes her the makeup artist everyone wants.
                     </p>
 
                     <p>
-                        Zoe offers a level of expertise and client care at the highest standard. To date she has made up numerous clients for both weddings and special occasions, resulting in an excellent reputation. Taking a limited amount of bookings per year.
+                        Zoe offers a level of expertise and client care at the highest standard. To date she has made up numerous clients for both weddings and special occasions, resulting in an excellent reputation. Staying a constant professional with a friendly manner. You’ll be won over not only by Zoes incredible skill but bubbly and charming personality.
                     </p>
                     <img class="visible-xs" src="/images/ima-logo2.png">
                     <p>
-                        If you've got a big event coming up and your looking for a professional makeup artist in Telford, Bridgnorth, and other areas in Shropshire Zoe will make you a perfectly polished version of yourself. Starting with the absolutely flawless base and discussing all of your wants and needs. Whether this be for your big day, a work event, photo shoot or a great night out.
+                        If you've got a big event coming up and you're looking for a professional makeup artist in Telford, Bridgnorth, and other areas in Shropshire Zoe will make you a perfectly polished version of yourself. Starting with the absolutely flawless base and discussing all of your wants and needs. Whether this be for your big day, a work event, photo shoot or a great night out.
                     </p>
                     <p>
-                        Freelance makeup artist covering Telford, Newport, Bridgnorth and Shrewsbury. Basically a Shropshire makeup artist. Zoe offers the ultimate luxury service in bridal makeup, these appointments are limited wedding and special occasion appointments, so that Zoe can provide the highest quality care and attention to all of her brides and clients, giving an altogether more intimate and tailored experience.
+                        Zoe is a freelance makeup artist covering Telford, Newport, Bridgnorth and Shrewsbury however due to high demand and increasing popularity of your makeup skills she now travels around the UK. Zoe only offers the ultimate luxury service in bridal makeup, these appointments are limited so that Zoe can provide the highest quality care and attention to all of her brides and clients, giving an altogether more intimate and tailored experience.
                     </p>
                     <p>
-                        For Zoe there is absolutely nothing better than making someone feel extra special through the application of make up. Zoe is here to make you feel and look more beautiful than your already beautiful self.
+                        Zoe takes the utmost pride in her makeup kit ensuring all products are high quality brands that are ensured to give you the most beautiful look which will stay on all day. For Zoe there is absolutely nothing better than making someone feel extra special through the application of make up. Zoe is here to make you feel and look more beautiful than your already beautiful self.
                     </p>
-                    <p>
-                        Have a look at the q&a page for extra information.
-                    </p>
-
-
+                    
                 </div><!-- / about-description -->
             </div><!-- / row -->
         </div><!-- / section-w-image -->
