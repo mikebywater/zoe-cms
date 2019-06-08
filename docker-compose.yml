@@ -1,0 +1,72 @@
+version: '3.5'
+services:
+
+    # The Application
+    zoe-app:
+        container_name: zoe-app
+        image: zoe-app
+        build:
+            context: ./
+            dockerfile: docker/application/Dockerfile
+        working_dir: /var/www
+        networks:
+            - zoe
+        volumes:
+            - ./:/var/www
+        ports:
+            - 9090:9000
+        environment:
+            - "KAFKA_BROKERS=kafka"
+
+    # The Web Server
+    zoe-web:
+        container_name: zoe-web
+        image: zoe-web
+        build:
+            context: ./
+            dockerfile: docker/web/Dockerfile
+        working_dir: /var/www
+        depends_on:
+            - zoe-app
+        networks:
+            - zoe
+        volumes:
+            - ./public:/var/www/public
+        ports:
+            - 8080:80
+
+    # The Database
+    zoe-db:
+        container_name: zoe-db
+        networks:
+            - zoe
+        image: mysql:5.7
+        volumes:
+            - zoe-db:/var/lib/mysql
+        environment:
+            - "MYSQL_ROOT_PASSWORD=secret"
+            - "MYSQL_USER=zoe"
+            - "MYSQL_PASSWORD=secret"
+            - "MYSQL_DATABASE=zoe"
+        ports:
+            - 33061:3306
+
+    # Adminer
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 8888:8080
+        environment:
+            - "ADMINER_DESIGN=pappu687"      
+        networks:
+          - zoe
+
+
+
+networks:
+    zoe:
+        name: zoe
+
+volumes:
+    zoe-db:
