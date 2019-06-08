@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <!-- Controls -->
+            <!-- Controls  -->
             <a class="left carousel-control hidden-sm hidden-xs" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="fa fa-arrow-left" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
