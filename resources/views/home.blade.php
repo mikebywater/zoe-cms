@@ -19,15 +19,11 @@
                 <li data-target="#carousel-example-generic" data-slide-to="6"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="7"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="9"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" >
                 <div class="item active">
-                    <img src="/images/words.jpg" alt="...">
-                </div>
-                <div class="item">
                     <img src="/images/davenport2.jpg" alt="...">
                 </div>
                 <div class="item">
