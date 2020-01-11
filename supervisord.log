@@ -70,3 +70,6 @@
 2019-11-02 12:19:40,661 INFO supervisord started with pid 1
 2019-11-02 12:19:41,665 INFO spawned: 'php' with pid 8
 2019-11-02 12:19:42,895 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-11-06 02:16:02,132 WARN received SIGTERM indicating exit request
+2019-11-06 02:16:02,132 INFO waiting for php to die
+2019-11-06 02:16:02,143 INFO stopped: php (exit status 0)

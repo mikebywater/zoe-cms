@@ -1,5 +1,5 @@
 @extends('layouts.master')
-
+<meta name="p:domain_verify" content="781567b5f500b5d06ad960c2b6c191e5"/>
 
 
 @section('content')
