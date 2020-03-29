@@ -21,7 +21,6 @@
                 <li data-target="#carousel-example-generic" data-slide-to="8"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="9"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="10"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="11"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -34,9 +33,6 @@
                 </div>
                 <div class="item">
                     <img src="/images/davenport2.jpg" alt="...">
-                </div>
-                <div class="item">
-                    <img src="/images/mirrorwebsite.jpg" alt="...">
                 </div>
                 <div class="item">
                     <img src="/images/big-room.jpg" alt="...">
