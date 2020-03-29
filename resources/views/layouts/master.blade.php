@@ -13,7 +13,6 @@
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="p:domain_verify" content="781567b5f500b5d06ad960c2b6c191e5"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Zoe Bywater, Makeup Artist in Telford">
     <meta name="keywords" content="makeup, makeup artist, Telford, Shropshire, bridal, bridal makeup, Zoe Bywater, Shrewsbury, mua, special occasions">
