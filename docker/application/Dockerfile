@@ -9,13 +9,13 @@ RUN apt-get install -y \
             libpng-dev
 
 # PHP extensions
-RUN apt-get update && apt-get install -y mysql-client
+RUN apt-get update && apt-get install -y default-mysql-client
 RUN docker-php-ext-configure gd \
-        --with-freetype-dir=/usr/include/ \
-        --with-jpeg-dir=/usr/include/
+        --with-freetype=/usr/include/ \
+        --with-jpeg=/usr/include/
  #       --with-xpm-dir=/usr/include/ \
   #      --with-vpx-dir=/usr/include/
-  RUN docker-php-ext-install pdo_mysql gd
+RUN docker-php-ext-install pdo_mysql gd
 
 # Kafka
 RUN apt-get install -y librdkafka-dev

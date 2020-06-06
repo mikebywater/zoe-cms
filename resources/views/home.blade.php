@@ -26,34 +26,34 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox" >
                 <div class="item active">
-                    <img src="/images/vogue.jpg" alt="...">
+                    <img src="/images/vogue_1.jpg" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/Elliepurple.jpg" alt="...">
+                    <img src="/images/Elliepurple_1.jpg" loading="lazy" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/davenport2.jpg" alt="...">
+                    <img src="/images/davenport2_1.jpg"  loading="lazy" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/big-room.jpg" alt="...">
+                    <img src="/images/big-room_1.jpg"  loading="lazy"alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/hand-mirror.jpg" alt="...">
+                    <img src="/images/hand-mirror_1.jpg" loading="lazy" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/highbury.jpg" alt="...">
+                    <img src="/images/highbury_1.jpg" loading="lazy" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/oliviaside.png" alt="...">
+                    <img src="/images/oliviaside_1.png"  loading="lazy"alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/goodbye.jpg" alt="...">
+                    <img src="/images/goodbye_1.jpg" loading="lazy" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/couple.jpg" alt="...">
+                    <img src="/images/couple_1.jpg" loading="lazy" alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/photoshoot.jpg" alt="...">
+                    <img src="/images/photoshoot_1.jpg" loading="lazy" alt="...">
                 </div>
             </div>
 
