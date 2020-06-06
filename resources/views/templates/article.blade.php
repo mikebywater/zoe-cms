@@ -25,7 +25,7 @@
                     <!-- post content area -->
                     <div class="col-xs-12">
                         <div class="blog block post-content-area">
-                            <img style="height: 200px" src="data:image/png;base64,{{$fields->mainImage}}" alt="{{$fields->title}}">
+                            <img src="data:image/png;base64,{{$fields->mainImage}}" alt="{{$fields->title}}">
                             <div class="post-info-box">
                                 <h3>{{$fields->heading1}}</h3>
                                 <p class="post-meta">Posted by <a href="#">Zoe Bywater</a> on {{$page->created_at->format('d/m/Y')}}</p>
