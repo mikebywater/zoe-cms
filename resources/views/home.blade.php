@@ -38,16 +38,7 @@
                     <img src="/images/big-room_1.jpg"  loading="lazy"alt="...">
                 </div>
                 <div class="item">
-                    <img src="/images/hand-mirror_1.jpg" loading="lazy" alt="...">
-                </div>
-                <div class="item">
                     <img src="/images/highbury_1.jpg" loading="lazy" alt="...">
-                </div>
-                <div class="item">
-                    <img src="/images/oliviaside_1.png"  loading="lazy"alt="...">
-                </div>
-                <div class="item">
-                    <img src="/images/goodbye_1.jpg" loading="lazy" alt="...">
                 </div>
                 <div class="item">
                     <img src="/images/couple_1.jpg" loading="lazy" alt="...">
@@ -117,7 +108,7 @@
             <!-- post-block -->
                 <div class="col-sm-4">
                     <div class="post-block">
-                        <a href="/pages/{{$post->name}}"><img src="data:image/png;base64,{{$post->field('mainImage')->value}}" alt=""></a>
+                        <a href="/pages/{{$post->name}}"><img loading="lazy"  src="data:image/png;base64,{{$post->field('mainImage')->value}}" alt=""></a>
                         <div class="small-post-text">
                             <h5><a href="/pages/{{$post->name}}">{{strtoupper($post->name)}}</a></h5>
                             <p class="small-post-meta">{{$post->created_at->format('d/m/Y')}}</p>
