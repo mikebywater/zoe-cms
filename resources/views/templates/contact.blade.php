@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('facebook_event')
+    fbq('track', 'Contact');
+@endsection
+
 @section('content')
 
 <!-- header-banner -->
