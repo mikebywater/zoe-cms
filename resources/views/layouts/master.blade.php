@@ -109,7 +109,6 @@
                             @endforeach
                         @endif
                         <li><a href="/blog"><span>BLOG</span></a></li>
-                        <li><a href="/reviews"><span>REVIEWS</span></a></li>
                     </ul>
 
             </div><!--/ nav-collapse -->

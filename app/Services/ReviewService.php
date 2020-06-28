@@ -11,6 +11,7 @@ class ReviewService
         $client = new Client();
         $json = $client->request('GET', 'https://maps.googleapis.com/maps/api/place/details/json', ['query' =>
             ['placeid' => 'ChIJmRGFnpR_cEgRteOCjbcPGFw' , 'key' => env('GPLACES_KEY')]]);
+        dd($json->getBody()->getContents());
         return collect(json_decode($json->getBody()->getContents())->result->reviews)->sortByDesc('time');
     }
 

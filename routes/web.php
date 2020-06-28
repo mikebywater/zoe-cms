@@ -30,7 +30,7 @@ Route::get('/google278d3acd537d5b85.html', function () {
 
 Route::get('/sitemap.xml', 'PageController@sitemap');
 
-Route::get('/reviews', 'ReviewController@index');
+//Route::get('/reviews', 'ReviewController@index');
 
 
 
