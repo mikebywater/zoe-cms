@@ -37,7 +37,7 @@
                 <i class="lnr lnr-smartphone"></i>
             </div>
             <h5>PHONE</h5>
-                <p>Mobile: <a href="tel:+{{$fields->phone}}">+{{$fields->phone}}</a></p>
+                <p><a href="tel:+{{$fields->phone}}">+{{$fields->phone}}</a></p>
         </div><!-- / contact-info -->
 
         <div class="col-sm-4 contact-info text-center space-bottom">
@@ -45,7 +45,7 @@
                 <i class="lnr lnr-envelope"></i>
             </div>
             <h5>EMAIL</h5>
-            <p>Personal: <a href="mailto:{{$fields->email}}">{{$fields->email}}</a></p>
+            <p><a href="mailto:{{$fields->email}}">{{$fields->email}}</a></p>
         </div><!-- / contact-info -->
 
     </div><!-- / row -->
