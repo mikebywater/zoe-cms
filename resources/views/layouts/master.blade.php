@@ -101,7 +101,7 @@
             <div class="navbar-collapse collapse">
 
                     <ul class="nav navbar-nav">
-                        <li><a href="/home"><span>HOME</span></a></li>
+                        <li><a href="/"><span>HOME</span></a></li>
                         <li><a href="/gallery"><span>GALLERY</span></a></li>
                         @if(isset($pages))
                             @foreach($pages as $page)
