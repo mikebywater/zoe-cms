@@ -96,7 +96,7 @@ class PageService
             $field = $this->fieldRepository->findByPageAndName($id, $key);
             if($field->type == 'image'){
                 $file = $request->file($field->name);
-                $image = Image::make($file)->save('temp.jpg', 10);
+                $image = Image::make($file)->save('temp.jpg', 60);
 
                 $data[$key] = base64_encode(file_get_contents('temp.jpg'));
                 unlink('temp.jpg');
