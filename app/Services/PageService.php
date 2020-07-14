@@ -6,6 +6,7 @@ use App\Repositories\Field\FieldRepository;
 use App\Repositories\Page\PageRepository;
 use App\Repositories\Template\TemplateRepository;
 use GuzzleHttp\Psr7\UploadedFile;
+use Intervention\Image\Facades\Image;
 
 class PageService
 {
@@ -95,7 +96,10 @@ class PageService
             $field = $this->fieldRepository->findByPageAndName($id, $key);
             if($field->type == 'image'){
                 $file = $request->file($field->name);
-                $data[$key] = base64_encode(file_get_contents($file));
+                $image = Image::make($file)->save('temp.jpg', 10);
+
+                $data[$key] = base64_encode(file_get_contents('temp.jpg'));
+                unlink('temp.jpg');
             }
             $this->fieldRepository->update($field->id,array('name' => $key , 'value' => $data[$key]));
         }
