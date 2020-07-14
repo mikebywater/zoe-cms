@@ -27,7 +27,7 @@
                     <!-- post-block -->
                     <div class="col-sm-4">
                         <div class="post-block">
-                            <a href="/pages/{{$post->name}}"><img src="data:image/png;base64,{{$post->field('mainImage')->value}}" alt=""></a>
+                            <a href="/pages/{{$post->name}}"><img loading="lazy" src="data:image/png;base64,{{$post->field('mainImage')->value}}" alt=""></a>
                             <div class="small-post-text">
                                 <h5><a href="/pages/{{$post->name}}">{{strtoupper($post->name)}}</a></h5>
                                 <p class="small-post-meta">{{$post->created_at->format('d/m/Y')}}</p>
