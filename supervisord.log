@@ -91,3 +91,9 @@
 2020-07-13 20:12:09,070 INFO supervisord started with pid 1
 2020-07-13 20:12:10,078 INFO spawned: 'php' with pid 9
 2020-07-13 20:12:11,452 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2020-08-16 15:08:53,352 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2020-08-16 15:08:53,385 INFO RPC interface 'supervisor' initialized
+2020-08-16 15:08:53,386 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2020-08-16 15:08:53,390 INFO supervisord started with pid 1
+2020-08-16 15:08:54,400 INFO spawned: 'php' with pid 8
+2020-08-16 15:08:55,733 INFO success: php entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

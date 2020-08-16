@@ -31,6 +31,31 @@
 &noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
+    <!-- Load Facebook SDK for JavaScript -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v8.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat"
+         attribution=install_email
+         page_id="133603593932613"
+         theme_color="#d4a88c"
+         logged_in_greeting="Hi, How can I help you?"
+         logged_out_greeting="Hi, How can I help you?">
+    </div>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -120,6 +145,7 @@
 
 
 @yield('content')
+<div id="fb-root"></div>
 
 
 <!-- footer -->
